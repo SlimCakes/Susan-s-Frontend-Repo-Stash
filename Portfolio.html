@@ -16,48 +16,94 @@
             padding: 20px;
             text-align: center;
         }
+        h1 {
+            font-size: 72px;
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        h1 span {
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 88px; /* Adjust size to match text */
+        }
+
+        h2 {
+            font-size: 56px;
+            font-weight: 600;
+            margin: 0;
+        }
+        h4 {
+            font-size: 32px;
+            font-weight: 300; /* Adjust size to match text */
+        }
         section {
             padding: 20px;
         }
-        .projects {
-            display: flex;
-            justify-content: space-between;
-        }
-        .project {
-            width: 30%;
-            padding: 10px;
-            background-color: #f0f0f0;
-            text-align: center;
-        }
         nav {
             display: flex;
-            justify-content: right;
-            background-color: #f0f0f0;
-            padding: 10px 0;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px; /* Add padding for spacing */
+            background-color: #001228; /* Match body background */
         }
-        nav a {
-            margin: 0 15px;
+
+        .logo {
+            font-size: 16px;
+            font-weight: bold;
+            color: #001228;
+            background-color: white;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 24px; /* Rounded border for logo */
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #001228;
+            background-color: white;
             text-decoration: none;
-            color: #3D405B;
-            font-size: 18px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 24px; /* Rounded edges */
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            background-color: #f0f0f0; /* Slight hover effect */
         }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <a href="#about">About</a>
-            <a href="#designs">Designs</a>
-            <a href="#contact">Contact Me</a>
-        </nav>
-        <h1>Susan's Portfolio</h1>
+            <!-- Left side logo -->
+            <div class="logo">SUSAN.NKERE™</div>
+            
+            <!-- Right side navigation links -->
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#contact">Contact Me</a>
+            </div>
+        </nav>    
     </header>
     <section>
-        <h2>Projects</h2>
-        <div class="projects">
-            <div class="project">Project 1</div>
-            <div class="project">Project 2</div>
-            <div class="project">Project 3</div>
+        <div class="container">
+            <!-- Greeting with large text and emoji -->
+            <h1>
+                Hello there👋
+            </h1>
+            <!-- Introduction text -->
+            <h2>I’m Susan Nkere, <br>a Product Designer</h2>
+            <!--Body text-->
+            <h4>I'm an enthusiastic Product Designer who specialises in developing engaging digital <br>
+                experiences. I combine creativity with design thinking to build visually appealing <br>
+                and useful web and mobile experiences.</h3>
         </div>
     </section>
 </body>
