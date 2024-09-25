@@ -5,57 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <style>
+        /* Global Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #00010e;
+            color: #f1f1f1;
         }
+
         header {
-            background-color: #001228;
+            background-color: #00010e;
             color: white;
             padding: 20px;
             text-align: center;
         }
+
         h1 {
-            font-size: 72px;
+            font-size: 48px;
             line-height: 1.2;
-            margin: 0;
+            margin: 10px 0; /* 10px margin for H1 */
         }
 
         h1 span {
             display: inline-block;
             margin-left: 10px;
-            font-size: 88px; /* Adjust size to match text */
+            font-size: 88px;
         }
 
         h2 {
-            font-size: 56px;
+            font-size: 48px;
             font-weight: 600;
             margin: 0;
         }
+
         h4 {
-            font-size: 32px;
-            font-weight: 300; /* Adjust size to match text */
+            font-size: 24px;
+            font-weight: 200;
         }
+
         section {
             padding: 20px;
         }
+
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 50px; /* Add padding for spacing */
-            background-color: #001228; /* Match body background */
+            padding: 20px 40px;
+            background-color: #00010e;
         }
 
         .logo {
             font-size: 16px;
             font-weight: bold;
-            color: #001228;
-            background-color: white;
+            color: #00010e;
+            background-color: #f1f1f1;
             padding: 10px 20px;
             border: 2px solid white;
-            border-radius: 24px; /* Rounded border for logo */
+            border-radius: 24px;
         }
 
         .nav-links {
@@ -64,17 +72,139 @@
         }
 
         .nav-links a {
-            color: #001228;
+            color: #00010e;
             background-color: white;
             text-decoration: none;
             padding: 10px 20px;
             font-size: 16px;
-            border-radius: 24px; /* Rounded edges */
+            border-radius: 24px;
             font-weight: 500;
         }
 
         .nav-links a:hover {
-            background-color: #f0f0f0; /* Slight hover effect */
+            background-color: #f0f0f0;
+        }
+
+        /* Intro Section */
+        .intro {
+            text-align: left; /* Align text to the left */
+            padding: 20px;
+            background-color: #00010e;
+        }
+
+        .intro h1 {
+            color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        .intro h2 {
+            color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        .intro h4 {
+            color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        #portfolio {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .projects {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+         /* About Section */
+    .about {
+        display: flex;
+        justify-content: space-between; /* Align items on both sides */
+        padding: 50px;
+        background-color: #00010e;
+        align-content: center;
+    }
+    .about-left {
+        flex: 1; /* Allow the left side to take up available space */
+        text-align: left; /* Center align text horizontally */
+        display: flex; /* Use flexbox for vertical centering */
+        flex-direction: column; /* Align items in a column */
+        justify-content: center; /* Center items vertically */
+        margin-right: 20px; /* Space between left and right */
+    }
+
+    .about-right {
+        flex: 1; /* Allow the right side to take up available space */
+        text-align: left; /* Align text to the right */
+        display: flex; /* Use flexbox for better alignment */
+        justify-content: center; /* Center the image vertically */
+        align-items: center; /* Align items vertically */
+    }
+
+    .about img {
+        width: 360px;
+        height: auto; /* Use auto for better responsiveness */
+        border-radius: 8px;
+        margin-top: 20px;
+    }
+
+    .contact-button {
+        margin-top: 20px; /* Space above the button */
+        padding: 10px 20px; /* Button padding */
+        background-color: white; /* Button background color */
+        color: #00010e; /* Button text color */
+        border: none; /* Remove border */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor on hover */
+        width: 150px; /* Fixed width for the button */
+        text-align: center; /* Center text inside the button */
+    }
+
+    .contact-button:hover {
+        background-color: #555; /* Darker background on hover */
+    }
+
+        /* Work Section */
+        .work {
+            padding: 50px;
+            text-align: center;
+            background-color: #00010e;
+        }
+
+        .works {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .work-item {
+            width: 200px;
+            margin: 20px;
+        }
+
+        .work-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+            padding: 40px;
+            background-color: #00010e;
+        }
+
+        .contact a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -93,18 +223,79 @@
         </nav>    
     </header>
     <section>
-        <div class="container">
+        <div class="container intro">
             <!-- Greeting with large text and emoji -->
             <h1>
                 Hello there👋
             </h1>
             <!-- Introduction text -->
             <h2>I’m Susan Nkere, <br>a Product Designer</h2>
-            <!--Body text-->
+            <!-- Body text -->
             <h4>I'm an enthusiastic Product Designer who specialises in developing engaging digital <br>
                 experiences. I combine creativity with design thinking to build visually appealing <br>
-                and useful web and mobile experiences.</h3>
+                and useful web and mobile experiences.</h4>
         </div>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h2>Selected Works</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="project1.jpg" alt="Project 1">
+                </div>
+                <div class="project">
+                    <img src="project2.jpg" alt="Project 2">
+                </div>
+                <div class="project">
+                    <img src="project3.jpg" alt="Project 3">
+                </div>
+            </div>
+        </section>
+
+       <!-- About Section --> 
+<section id="about" class="about">
+    <div class="about-left">
+        <h2>A Little About Me</h2>
+        <p>
+            I'm Susan, a Product Designer based in Nigeria.<br>
+            I create user-friendly and eye-catching digital experiences.<br>
+            My goal is to ensure digital products stand out while being easy to use.<br>
+            When I'm not designing, I'm probably learning something new or playing games.
+        </p>
+        <button class="contact-button">Contact Me</button>
+    </div>
+    <div class="about-right">
+        <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727260514/Headshot_1_zeqicq.jpg" alt="Susan Nkere">
+    </div>
+</section>
+
+        <!-- Work Section -->
+        <section id="work" class="work">
+            <h2>Work (2022 - 2023)</h2>
+            <div class="works">
+                <div class="work-item">
+                    <img src="project4.jpg" alt="Project 4">
+                    <h3>Project 4</h3>
+                    <p>Short description of Project 4</p>
+                </div>
+                <div class="work-item">
+                    <img src="project5.jpg" alt="Project 5">
+                    <h3>Project 5</h3>
+                    <p>Short description of Project 5</p>
+                </div>
+                <div class="work-item">
+                    <img src="project6.jpg" alt="Project 6">
+                    <h3>Project 6</h3>
+                    <p>Short description of Project 6</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <footer id="contact" class="contact">
+            <h2>Let's Work Together</h2>
+            <p>Contact me at <a href="mailto:susannkere@gmail.com">susannkere@gmail.com</a></p>
+        </footer>
     </section>
 </body>
 </html>
