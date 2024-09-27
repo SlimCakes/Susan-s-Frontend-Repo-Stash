@@ -5,43 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <style>
+            /* Declare the font with @font-face */
+        @font-face {
+        font-family: 'Poppins';
+        src: url('Fonts/Poppins-Regular.ttf') format('truetype');
+        font-weight: 400; /* Normal */
+        font-style: normal;
+        }
+
+        @font-face {
+        font-family: 'Poppins';
+        src: url('Fonts/Poppins-Bold.ttf') format('truetype');
+        font-weight: 700; /* Bold */
+        font-style: normal;
+        }
+
+        @font-face {
+        font-family: 'Poppins';
+        src: url('Fonts/Poppins-Italic.ttf') format('truetype');
+        font-weight: 400; /* Normal */
+        font-style: italic;
+        }
+
         /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #00010e;
-            color: #f1f1f1;
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #00010e;
+        color: #f1f1f1;
+        line-height: 1.2; /* Adding a default line height */
         }
 
         header {
-            background-color: #00010e;
-            color: white;
-            padding: 20px;
-            text-align: center;
+        background-color: #00010e;
+        color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
         }
 
         h1 {
-            font-size: 48px;
-            line-height: 1.2;
-            margin: 10px 0; /* 10px margin for H1 */
+        font-size: 72px;
+        font-weight: 400; /* Set h1 to bold */
+        margin: 0; /* 10px margin for H1 */
+        letter-spacing: -2px;
         }
 
         h1 span {
-            display: inline-block;
-            margin-left: 10px;
-            font-size: 88px;
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 96px;
+        font-weight: 400; /* Set font weight for span */
         }
 
         h2 {
-            font-size: 48px;
-            font-weight: 600;
-            margin: 0;
+        font-size: 48px;
+        font-weight: 400;
+        margin: 20px 0;
+        line-height: 1.1;
         }
 
         h4 {
-            font-size: 24px;
-            font-weight: 200;
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0;
+        line-height: 1.4; /* Added line-height to improve readability */
+        }
+        
+        P {
+        font-size: 16px;
+        margin: 20px 0;
+        line-height: 1.4; /* Added line-height to improve readability */
+        }
+
+      /* Container styling */
+        .container.intro {
+        width: 1120px;
+        margin: 0 auto; /* This centers the div horizontally */
+        padding: 0; /* Add padding for better spacing inside */
+        box-sizing: border-box; /* Ensures padding doesn't affect width */
+        }
+    /* Style each heading with different colors */
+        .container.intro h1 {
+        color: #F1f1f1; /* Red-orange color for h1 */
+        }
+
+        .container.intro h2 {
+        color: #f1f1f1; /* Blue color for h2 */
+        font-size: 72px;
+        font-weight: 400;
+        margin: 0;
+        padding-bottom: 32px;
+        line-height: 1.1;
+        letter-spacing: -2px;
+        }
+
+        .container.intro h4 {
+        color: #b0b0b0; /* Green color for h4 */
+        font-size: 24px;
+        font-weight: 400;
+        margin: 20px 0;
+        line-height: 1.4; /* Added line-height to improve readability */
         }
 
         section {
@@ -98,6 +162,7 @@
         }
 
         .intro h2 {
+            font-size: 48px;
             color: #f1f1f1;
             padding-left: 20px;
         }
@@ -228,10 +293,10 @@
         <div class="container intro">
             <!-- Greeting with large text and emoji -->
             <h1>
-                Hello there👋
+                Hello there👋,
             </h1>
             <!-- Introduction text -->
-            <h2>I’m Susan Nkere, <br> a Product Designer</h2>
+            <h2>I’m Susan Nkere, <br> a Product Designer.</h2>
             <!-- Body text -->
             <h4>I'm an enthusiastic Product Designer who specialises in developing engaging digital <br>
                 experiences. I combine creativity with design thinking to build visually appealing <br>
@@ -259,12 +324,12 @@
     <div class="about-left">
         <h2>A Little About Sue</h2>
         <p>
-            I'm an enthusiastic UI/UX Designer specializing in creating engaging digital<br> experiences.
-            With over three years of experience, I combine creativity with<br> user-centered design to build visually
-            appealing and functional web and mobile solutions. My journey includes leadership roles with AIESEC and<br> 
-            contributions to performance management at StreetPriests Inc., where I <br> developed strong data analysis skills.
-            As the Assistant Business Developer<br> and HR for GoldMill Market and Pax Market Funds Nigeria,
-            I contribute to strategic growth and HR initiatives. I’m also exploring front-end <br> development
+            I'm an enthusiastic UI/UX Designer specializing in creating engaging digital experiences.
+            With over three years of experience, I combine creativity with user-centered design to build visually
+            appealing and functional web and mobile solutions. My journey includes leadership roles with AIESEC and
+            contributions to performance management at StreetPriests Inc., where I  developed strong data analysis skills.
+            As the Assistant Business Developer and HR for GoldMill Market and Pax Market Funds Nigeria,
+            I contribute to strategic growth and HR initiatives. I’m also exploring front-end development
             and leading educational projects like The Street Space to upskill volunteers.
         </p>
         <button class="contact-button">Contact Me</button>
