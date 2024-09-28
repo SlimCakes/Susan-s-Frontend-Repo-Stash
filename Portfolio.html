@@ -112,6 +112,12 @@
             padding: 20px;
         }
 
+        header, footer, .intro, #portfolio, .about, .work {
+        max-width: 1200px; /* Limit content width */
+        margin: 0 auto; /* Center the content */
+        padding: 0 20px; /* Add padding for smaller screens */
+        }
+
         nav {
             display: flex;
             justify-content: space-between;
@@ -179,23 +185,31 @@
 
         .projects {
             display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            overflow-y: hidden; /* Prevent vertical scrolling */
             justify-content: space-around;
             margin: 40px 0;
+            width: auto;
+            max-width: none;
         }
 
         .project img {
-            width: 100%;
+            width: 280px;
             height: auto;
-            border-radius: 10px;
+            border-radius: 0px;
+            flex-shrink: 0;
         }
 
          /* About Section */
     .about {
         display: flex;
+        flex-direction: row;
         justify-content: space-between; /* Align items on both sides */
         padding: 50px;
         background-color: #00010e;
         align-content: center;
+        text-align: center;
     }
     .about-left {
         flex: 1; /* Allow the left side to take up available space */
@@ -247,18 +261,44 @@
         }
 
         .works {
-            display: flex;
             justify-content: space-around;
+            align-content: center;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 3 equal-width columns */
+            gap: 20px; /* Space between the items */
+            max-width: 1200px; /* Optional max-width to control the container width */;
         }
 
         .work-item {
-            width: 200px;
+            width: 280px;
             margin: 20px;
+            display: flex;
+            flex-direction: column; /* Stack image and caption vertically */
+            align-items: center; /* Center-align items */
+            text-align: center; /* Center text within the div */
+            max-width: 200px; /* Restrict width as necessary */
         }
 
+        .work-item h3 {
+            margin-top: 20px;
+            margin-bottom: 4px; /* Adjust this value as needed for space below the heading */
+            font-size: 16px;
+            width: auto;
+        }
+
+        .work-item p {
+            margin-top: 4px; /* Adjust this value for space above the paragraph */
+            margin-bottom: 15px; /* Optional: control space below paragraphs */
+            font-size: 12px;
+            width: auto;
+        }
+
+
         .work-item img {
-            width: 100%;
-            border-radius: 10px;
+            width: 280px;
+            height: auto; /* Use auto for better responsiveness */
+            border-radius: 8px;
+            margin-top: 20px;
         }
 
         /* Contact Section */
@@ -308,13 +348,28 @@
             <h2>Selected Works</h2>
             <div class="projects">
                 <div class="project">
-                    <img src="project1.jpg" alt="Project 1">
+                    <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727538186/Shortlet_application_1_rtzshp.png" alt="Project 1">
                 </div>
                 <div class="project">
-                    <img src="project2.jpg" alt="Project 2">
+                    <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727538159/shortlet_admin_dashboard_2_c87uqb.png" alt="Project 2">
                 </div>
                 <div class="project">
-                    <img src="project3.jpg" alt="Project 3">
+                    <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727515421/Shortlet_application_bjefcj.png" alt="Project 3">
+                </div>
+                <div class="project">
+                    <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727542445/Wf2_2_mql5ti.jpg" alt="Project 3">
+                </div>
+                <div class="project">
+                    <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727538159/shortlet_admin_dashboard_2_c87uqb.png" alt="Project 2">
+                </div>
+                <div class="project">
+                    <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727538186/Shortlet_application_1_rtzshp.png" alt="Project 1">
+                </div>
+                <div class="project">
+                    <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727542445/Wf2_2_mql5ti.jpg" alt="Project 3">
+                </div>
+                <div class="project">
+                    <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727515421/Shortlet_application_bjefcj.png" alt="Project 3">
                 </div>
             </div>
         </section>
@@ -344,19 +399,52 @@
             <h2>Work (2022 - 2023)</h2>
             <div class="works">
                 <div class="work-item">
-                    <img src="project4.jpg" alt="Project 4">
-                    <h3>Project 4</h3>
-                    <p>Short description of Project 4</p>
+                    <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727515387/shortlet_landing_page-agent_iu6n1u.png" 
+                    alt="Project 4">
+                    <h3>Traclet Landing Page</h3>
+                    <p>Shortlet landing page</p>
                 </div>
                 <div class="work-item">
-                    <img src="project5.jpg" alt="Project 5">
-                    <h3>Project 5</h3>
-                    <p>Short description of Project 5</p>
+                    <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727515421/Shortlet_application_bjefcj.png" 
+                    alt="Project 5">
+                    <h3>Traclet Mobile App</h3>
+                    <p>Shortlet mobile application</p>
                 </div>
                 <div class="work-item">
-                    <img src="project6.jpg" alt="Project 6">
-                    <h3>Project 6</h3>
-                    <p>Short description of Project 6</p>
+                    <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727515443/shortlet_admin_dashboard_az3rcb.png" 
+                    alt="Project 6">
+                    <h3>Traclet Admin Dashboard</h3>
+                    <p>Shortelet admin dashboard</p>
+                </div>
+                <div class="work-item">
+                    <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727515419/comapny_website_w2z9wc.png" 
+                    alt="Project 7">
+                    <h3>525 System</h3>
+                    <p>Company Website</p>
+                </div>
+                <div class="work-item">
+                    <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727538187/Shortlet_application_4_chuaji.png" 
+                    alt="Project 11">
+                    <h3>Weather For Two</h3>
+                    <p>Beddings websie design</p>
+                  </div>
+                  <div class="work-item">
+                    <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727538159/shortlet_admin_dashboard_2_c87uqb.png" 
+                    alt="Project 10">
+                    <h3>DC Food bank</h3>
+                    <p>Food bank website design</p>
+                  </div>
+                  <div class="work-item">
+                    <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727539051/Evercrest_bj1ijv.jpg" 
+                    alt="Project 9">
+                    <h3>Evercrest High school</h3>
+                    <p>Website design</p>
+                  </div>
+                <div class="work-item">
+                    <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727538185/Shortlet_application_2_mqvqk6.png" 
+                    alt="Project 8">
+                    <h3>UBA</h3>
+                    <p>Mobile application redesign</p>
                 </div>
             </div>
         </section>
