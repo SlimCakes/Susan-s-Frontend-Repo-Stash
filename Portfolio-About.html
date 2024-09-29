@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+            /* Declare the font with @font-face */
+        @font-face {
+        font-family: 'Poppins';
+        src: url('Fonts/Poppins-Regular.ttf') format('truetype');
+        font-weight: 400; /* Normal */
+        font-style: normal;
+        }
+
+        @font-face {
+        font-family: 'Poppins';
+        src: url('Fonts/Poppins-Bold.ttf') format('truetype');
+        font-weight: 700; /* Bold */
+        font-style: normal;
+        }
+
+        @font-face {
+        font-family: 'Poppins';
+        src: url('Fonts/Poppins-Italic.ttf') format('truetype');
+        font-weight: 400; /* Normal */
+        font-style: italic;
+        }
+
+          /* Global Styles */
+          body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #00010e;
+        color: #f1f1f1;
+        line-height: 1.2; /* Adding a default line height */
+        }
+
+        header {
+        background-color: #00010e;
+        color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+        }
+
+        h1 {
+        font-size: 72px;
+        font-weight: 400; /* Set h1 to bold */
+        margin: 0; /* 10px margin for H1 */
+        letter-spacing: -2px;
+        }
+
+        h1 span {
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 96px;
+        font-weight: 400; /* Set font weight for span */
+        }
+
+        h2 {
+        font-size: 48px;
+        font-weight: 400;
+        margin: 20px 0;
+        line-height: 1.1;
+        }
+
+        h4 {
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0;
+        line-height: 1.4; /* Added line-height to improve readability */
+        }
+        
+        P {
+        font-size: 16px;
+        margin: 20px 0;
+        line-height: 1.4; /* Added line-height to improve readability */
+        }
+
+        
+        header, footer, .intro, #portfolio, .about, .work {
+        max-width: 1200px; /* Limit content width */
+        margin: 0 auto; /* Center the content */
+        padding: 0 20px; /* Add padding for smaller screens */
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #00010e;
+        }
+
+        .logo {
+            font-size: 16px;
+            font-weight: bold;
+            color: #00010e;
+            background-color: #f1f1f1;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 16px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #00010e;
+            background-color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 16px;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            background-color: #555;
+        }
+
+        /* Intro Section */
+        .intro {
+            text-align: left; /* Align text to the left */
+            padding: 20px;
+            background-color: #00010e;
+        }
+
+        .intro h1 {
+            color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        .intro h2 {
+            font-size: 48px;
+            color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        .intro h4 {
+            color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        
+             /* About Section */
+    .about {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /* Align items on both sides */
+        padding: 50px;
+        background-color: #00010e;
+        align-content: center;
+        text-align: center;
+    }
+    .about-left {
+        flex: 1; /* Allow the left side to take up available space */
+        text-align: left; /* Center align text horizontally */
+        display: flex; /* Use flexbox for vertical centering */
+        flex-direction: column; /* Align items in a column */
+        justify-content: center; /* Center items vertically */
+        margin-right: 20px; /* Space between left and right */
+    }
+
+    .about-right {
+        flex: 1; /* Allow the right side to take up available space */
+        text-align: left; /* Align text to the right */
+        display: flex; /* Use flexbox for better alignment */
+        justify-content: center; /* Center the image vertically */
+        align-items: center; /* Align items vertically */
+    }
+
+    .about img {
+        width: 360px;
+        height: auto; /* Use auto for better responsiveness */
+        border-radius: 8px;
+        margin-top: 20px;
+    }
+
+    .contact-button {
+        margin-top: 20px; /* Space above the button */
+        padding: 10px 20px; /* Button padding */
+        background-color: white; /* Button background color */
+        color: #00010e; /* Button text color */
+        border: none; /* Remove border */
+        border-radius: 16px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor on hover */
+        width: 150px; /* Fixed width for the button */
+        text-align: center; /* Center text inside the button */
+        font-size: 16px;
+        font-weight: 200;
+    }
+
+    .contact-button:hover {
+        background-color: #555; /* Darker background on hover */
+    }
+
+   /* Work Experience Section */
+.work-experience {
+    margin: 100px auto;
+    text-align: center;
+    color: #f1f1f1;
+}
+
+.work-experience h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    color: #cbcbcb;
+}
+
+.experience-wrapper {
+    width:auto;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.experience-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 20px;
+}
+
+.experience-duration {
+    font-size: 16px;
+    color: #cccccc;
+    width: 20%;
+    text-align: left;
+}
+
+.experience-details {
+    width: auto;
+    text-align: left;
+}
+
+.experience-details h3 {
+    font-size: 16px;
+    margin-bottom: 4px;
+    color: #f1f1f1;
+}
+
+.role {
+    font-size: 12px;
+    color: #cccccc;
+    margin-bottom: 16px;
+}
+
+.experience-details p {
+    color: #cccccc;
+    line-height: 1.5;
+    width: auto;
+}
+
+/* Style adjustments for small screens */
+@media (max-width: 1200px) {
+    .experience-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .experience-duration,
+    .experience-details {
+        width: auto;
+        text-align: center; /* Align the text in the center for mobile devices */
+    }
+
+    .experience-duration {
+        margin-bottom: 10px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- Left side logo -->
+            <div class="logo">SUSAN.NKERE™</div>
+            
+            <!-- Right side navigation links -->
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#contact">Contact Me</a>
+            </div>
+        </nav>    
+    </header>
+
+    <!-- About Section --> 
+<section id="about" class="about">
+    <div class="about-left">
+        <h2>More About Sue</h2>
+        <p>
+            With over three years of experience, I specialize in UI/UX design, combining creativity and user-centered design to create visually appealing and functional web and mobile solutions.
+             My journey includes leadership roles with AIESEC and contributions to performance management at StreetPriests Inc., where I  developed strong data analysis skills.
+            As the Assistant Business Developer and HR for GoldMill Market and Pax Market Funds Nigeria,
+            I contribute to strategic growth and HR initiatives. I’m also exploring front-end development
+            and leading educational projects like The Street Space to upskill volunteers.
+        </p>
+        <button class="contact-button">Contact Me</button>
+    </div>
+    <div class="about-right">
+        <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727260514/Headshot_1_zeqicq.jpg" alt="Susan Nkere">
+    </div>
+</section>
+
+<!-- Work Experience Section -->
+<section id="work" class="work-experience">
+    <h2>Work Experience</h2>
+
+    <!-- Job 1 -->
+<div class="experience-item">
+    <div class="experience-duration">May 2024 - Present</div>
+    <div class="experience-details">
+        <h3>525System • Calabar</h3>
+        <p class="role">UI/UX Designer, Cordinator</p>
+        <ul>
+                <li>
+                    Conducted user research, developed design system for Mobile Application, website, and admin dashboard.
+                </li>
+                <li>
+                    Designed 350+ screens for mobile application, website, and Admin dashboard.  
+                </li>
+                <li>
+                    Spearheaded the designs and development of the Application and Company website.
+                </li>
+                <li>
+                    Collaborated with the development team to achieve Application deployment set for launch date.
+                </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Job 2 -->
+<div class="experience-item">
+    <div class="experience-duration">February 2024 - May 2024</div>
+    <div class="experience-details">
+        <h3>Aptech • Calabar</h3>
+        <p class="role">Web Design tutor</p>
+        <ul>
+                <li>
+                    Development and delivery of comprehensive web design curriculum encompassing fundamentals of HTML, CSS,
+                    JavaScript, and responsive design principles to students of varying skill levels.
+                </li>
+                <li>
+                    Ensuring the practical application of design theory and coding standards.  
+                </li>
+                <li>
+                    Regularly assessing and adapting lesson plans to meet individual student needs and industry trends.
+                </li>
+                <li>
+                    Providing one-on-one mentorship and support to enhance learning outcomes and career readiness
+                </li>
+        </ul>
+    </div>
+</div>
+
+ <!-- Job 2 -->
+<div class="experience-item">
+    <div class="experience-duration"> January 2021 - Present</div>
+    <div class="experience-details">
+        <h3>Freelance/Self Employed • Nigeria</h3>
+        <p class="role">Freelance Designer</p>
+        <ul>
+                <li>
+                    Portfolio: Developed and deployed over 15 creative concepts for a designer portfolio, which increased client
+                    engagement and project inquiries by 20%.
+                </li>
+                <li>
+                    Dating App: Improved dating apps user interface in collaboration with members of cross-functional team, to lead
+                    to at least 25% rise in user retention.   
+                </li>
+                <li>
+                    SendFunds: Collaborated with stakeholder and created high-fidelity designs from already provided wireframes
+                    using industry standard tools.
+                </li>
+                <li>
+                    Lykluk App: Collate user information on user experience from the currently existing application and develop new
+                    user interface to increase user experience and retention.
+                </li>
+        </ul>
+    </div>
+</div>
+
+ <!-- Job 3 -->
+<div class="experience-item">
+    <div class="experience-duration">August 2023 - September 2023</div>
+    <div class="experience-details">
+        <h3>Block Traders Academy • Nigeria</h3>
+        <p class="role">User Interface Designer</p>
+        <ul>
+                <li>
+                    Conducted user research to understand target audience, their needs, preferences, and behavior.
+                </li>
+                <li>
+                    Developed wireframes to visualize the layout, structure, and flow of the interface, allowing for early testing and
+                    feedback.   
+                </li>
+                <li>
+                    Developed and executed creation of visually appealing designs which aligned with the overall branding and style
+                    guidelines.
+                </li>
+                <li>
+                    Worked closely with other team members,such as developers, and stakeholders, and ensured that the design
+                    aligned with the overall project goals and technical constraints.
+                </li>
+        </ul>
+    </div>
+</div>
+
+        <!-- Job 4 -->
+        <div class="experience-item">
+            <div class="experience-duration">May 2023 - August 2023</div>
+            <div class="experience-details">
+                <h3>Tanta Innovative Limited • Lagos, Nigeria</h3>
+                <p class="role">User Interface Design Intern</p>
+                <ul>
+                    <li>
+                        Spearheaded the design team, working on three major projects of over 150 screens.
+                    </li>
+                        <li>
+                            Conducted user research and usability testing to inform design decisions to ensure seamless user experience.
+                            Collaborated with product manager, developers, QA, Cybersecurity and stakeholder to refine and implement
+                            design solutions.
+                        </li>
+                        <li>
+                            Created wireframes and prototypes using industry standard tools.
+                        </li>
+                        <li>
+                            Implemented user-centric design approach resulting in 30% decrease in bounce rate.
+                        </li>
+                        <li>
+                            Designed and deployed over 100 high fidelity mobile and website designs, mockups and prototypes for different
+                            customer, leading to 20% boost in customer satisfaction using standard industry tools.
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+        <!-- Job 5 -->
+        <div class="experience-item">
+            <div class="experience-duration">July 2022 - April 2023</div>
+            <div class="experience-details">
+                <h3>JK Agerland • Lagos,Nigeria</h3>
+                <p class="role">User Interface and User Experience Designer</p>
+                <ul>
+                    <li>
+                        Conducted user research and usability testing to inform design decisions to ensure seamless user experience.
+                        Collaborated with product manager, designers and engineers, to understand user needs and translate them into
+                        intuitive products
+                    </li>
+                        <li>
+                            Created wireframes and prototypes using industry standard tools.
+                        </li>
+                        <li>
+                            Developed and executed a comprehensive design strategy, resulting in successful 
+                            creation of high-end fidelity designs for over 120 screens within a tight deadline 
+                            of 2-3months to enable the agro-based start-up have designs ready for launch
+                        </li>
+                </ul>
+            </div>
+        </div>
+</section>
+
+<footer>
+    <p>Updated January 2024</p>
+</footer>
+</body>
+</html>
