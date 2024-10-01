@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif; /* Use a default font */
+        }
+
+        .profile-container {
+            display: flex;                   /* Use Flexbox for layout */
+            align-items: center;             /* Align items vertically centered */
+            justify-content: space-between;  /* Space between the image and button */
+            padding: 20px;                   /* Add some padding for spacing */
+            background-color: white;         /* Optional: Set a background color */
+        }
+
+        .profile-image {
+            flex: 0 0 auto;                  /* Prevent the image from growing or shrinking */
+        }
+
+        .profile-img {
+            width: 150px;                    /* Set image width */
+            height: 150px;                   /* Set image height */
+            border-radius: 50%;              /* Make the image circular */
+            object-fit: cover;               /* Prevent stretching */
+        }
+
+        .profile-name {
+            flex-grow: 1;                    /* Allow the name to take remaining space */
+            margin: 0 20px;                  /* Add horizontal margin for spacing */
+        }
+
+        .visit-store-btn {
+            padding: 10px 20px;              /* Add padding for the button */
+            background-color: #000;          /* Button background color */
+            color: #fff;                     /* Button text color */
+            border: none;                    /* Remove default border */
+            border-radius: 5px;              /* Rounded corners for the button */
+            cursor: pointer;                  /* Change cursor to pointer */
+        }
+    </style>
+</head>
+<body>
+
+<div class="profile-container">
+  <div class="profile-image">
+    <img src="profile-picture.jpg" alt="Adeife Adeoye" class="profile-img">
+  </div>
+  <h2 class="profile-name">Adeife Adeoye</h2>
+  <button class="visit-store-btn">Visit Store</button>
+</div>
+
+</body>
+</html>

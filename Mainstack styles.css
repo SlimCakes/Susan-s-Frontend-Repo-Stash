@@ -1,0 +1,178 @@
+/* Declare the font with @font-face */
+    @font-face {
+        font-family: 'Chakra Petch';
+        font-weight: 300;
+        font-style: normal;
+        src: url('Fonts/ChakraPetch-Light.ttf') format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Chakra Petch';
+        font-weight: 400;
+        font-style: normal;
+        src: url('Fonts/ChakraPetch-Regular.ttf') format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Chakra Petch';
+        font-weight: 500;
+        font-style: normal;
+        src: url('Fonts/ChakraPetch-Medium.ttf') format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Chakra Petch';
+        font-weight: 600;
+        font-style: normal;
+        src: url('Fonts/ChakraPetch-SemiBold.ttf') format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Chakra Petch';
+        font-weight: 700;
+        font-style: normal;
+        src: url('Fonts/ChakraPetch-Bold.ttf') format('truetype');
+    }
+    
+    /* Italic styles */
+    @font-face {
+        font-family: 'Chakra Petch';
+        font-weight: 300;
+        font-style: italic;
+        src: url('Fonts/ChakraPetch-LightItalic.ttf') format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Chakra Petch';
+        font-weight: 400;
+        font-style: italic;
+        src: url('Fonts/ChakraPetch-RegularItalic.ttf') format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Chakra Petch';
+        font-weight: 500;
+        font-style: italic;
+        src: url('Fonts/ChakraPetch-MediumItalic.ttf') format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Chakra Petch';
+        font-weight: 600;
+        font-style: italic;
+        src: url('Fonts/ChakraPetch-SemiBoldItalic.ttf') format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Chakra Petch';
+        font-weight: 700;
+        font-style: italic;
+        src: url('Fonts/ChakraPetch-BoldItalic.ttf') format('truetype');
+    }        
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'ChakraPetch', sans-serif;
+    background-color: #090c63; /* Dark blue background */
+    color: #fff;
+    text-align: center;
+  }
+
+  .profile-container {
+    display: flex;                /* Use Flexbox for layout */
+    justify-content: space-between; /* Space between items: left and right alignment */
+    align-items: center;         /* Center items vertically */
+    width: 100%;                 /* Full width of the parent container */
+    padding: 10px;               /* Optional: Add some padding */
+
+  }
+  
+  .profile-section {
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .profile-img {
+    flex: 0 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Prevent stretching by cropping the image as needed */
+    overflow: hidden; /* Ensures that any part of the image that overflows is hidden */
+    margin-right: auto;
+  }
+  
+  .view-portfolio-btn {
+    background-color: #011228;
+    color: #f1f1f1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-left: auto;
+  }
+
+  h4 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .tags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .tags span {
+    background-color: #ddd;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #000;
+  }
+  
+  .services-section button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .services-section {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
