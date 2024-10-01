@@ -1,74 +1,133 @@
 /* Declare the font with @font-face */
+    /* Regular */
     @font-face {
-        font-family: 'Chakra Petch';
-        font-weight: 300;
-        font-style: normal;
-        src: url('Fonts/ChakraPetch-Light.ttf') format('truetype');
-    }
-    
-    @font-face {
-        font-family:'Chakra Petch';
+        font-family: 'Playfair Display';
+        src: url('./Fonts/PlayfairDisplay-Regular.ttf') format('truetype');
         font-weight: 400;
         font-style: normal;
-        src: url('Fonts/ChakraPetch-Regular.ttf') format('truetype');
     }
-    
+
+    /* Bold */
     @font-face {
-        font-family: 'Chakra Petch';
-        font-weight: 500;
-        font-style: normal;
-        src: url('Fonts/ChakraPetch-Medium.ttf') format('truetype');
-    }
-    
-    @font-face {
-        font-family: 'Chakra Petch';
-        font-weight: 600;
-        font-style: normal;
-        src: url('Fonts/ChakraPetch-SemiBold.ttf') format('truetype');
-    }
-    
-    @font-face {
-        font-family: 'Chakra Petch';
+        font-family: 'Playfair Display';
+        src: url('./Fonts/PlayfairDisplay-Bold.ttf') format('truetype');
         font-weight: 700;
         font-style: normal;
-        src: url('Fonts/ChakraPetch-Bold.ttf') format('truetype');
     }
-    
-    /* Italic styles */
+
+    /* Black */
     @font-face {
-        font-family: 'Chakra Petch';
+        font-family: 'Playfair Display';
+        src: url('./Fonts/PlayfairDisplay-Black.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+    }
+
+    /* Light */
+    @font-face {
+        font-family: 'Playfair Display';
+        src: url('./Fonts/PlayfairDisplay-Light.ttf') format('truetype');
         font-weight: 300;
-        font-style: italic;
-        src: url('Fonts/ChakraPetch-LightItalic.ttf') format('truetype');
+        font-style: normal;
     }
-    
+
+    /* Italic */
     @font-face {
-        font-family: 'Chakra Petch';
+        font-family: 'Playfair Display';
+        src: url('./Fonts/PlayfairDisplay-Italic.ttf') format('truetype');
         font-weight: 400;
         font-style: italic;
-        src: url('Fonts/ChakraPetch-RegularItalic.ttf') format('truetype');
     }
-    
+
+    /* Light Italic */
     @font-face {
-        font-family: 'Chakra Petch';
-        font-weight: 500;
+        font-family: 'Playfair Display';
+        src: url('./Fonts/PlayfairDisplay-LightItalic.ttf') format('truetype');
+        font-weight: 300;
         font-style: italic;
-        src: url('Fonts/ChakraPetch-MediumItalic.ttf') format('truetype');
     }
-    
+
+    /* Bold Italic */
     @font-face {
-        font-family: 'Chakra Petch';
-        font-weight: 600;
-        font-style: italic;
-        src: url('Fonts/ChakraPetch-SemiBoldItalic.ttf') format('truetype');
-    }
-    
-    @font-face {
-        font-family: 'Chakra Petch';
+        font-family: 'Playfair Display';
+        src: url('./Fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype');
         font-weight: 700;
         font-style: italic;
-        src: url('Fonts/ChakraPetch-BoldItalic.ttf') format('truetype');
-    }        
+    }
+
+    /* Black Italic */
+    @font-face {
+        font-family: 'Playfair Display';
+        src: url('./Fonts/PlayfairDisplay-BlackItalic.ttf') format('truetype');
+        font-weight: 900;
+        font-style: italic;
+    }
+
+    /* Declare the font with @font-face */
+        /* Regular */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    /* Bold */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-Bold.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    /* SemiBold */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-SemiBold.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    /* Medium */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    /* Light */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-Light.ttf') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    /* ExtraLight */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-ExtraLight.ttf') format('truetype');
+        font-weight: 200;
+        font-style: normal;
+    }
+
+    /* Thin */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-Thin.ttf') format('truetype');
+        font-weight: 100;
+        font-style: normal;
+    }
+
+    /* Italic */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-Italic.ttf') format('truetype');
+        font-weight: 400;
+        font-style: italic;
+    }
+
 
 * {
     margin: 0;
@@ -77,28 +136,73 @@
   }
   
   body {
-    font-family: 'ChakraPetch', sans-serif;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 400; /* Adjust weight as needed */
     background-color: #090c63; /* Dark blue background */
-    color: #fff;
+    color: #F2F2F2;
     text-align: center;
+    background-image: url('https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727806094/77761_xqkvmu.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed when scrolling */
+    
+  
   }
+
+  header {
+    max-width: 800px; /* Limit content width */
+    margin: 0 auto; /* Center the content */
+    padding: 0; /* Add padding for smaller screens */
+    }
+
+    nav {
+        display: flex;
+        justify-content: right;
+        align-items: right;
+        width: 800px;
+        padding: 20px 0;
+        padding-top: 20px;
+        margin:20px;
+        background-color: #00010e00;
+    }
+
+    .nav-links a {
+        font-family: 'Manrope', sans-serif;
+        color: #011228;
+        background-color: #F2F2F2;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 24px;
+        font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      background: linear-gradient(45deg, #011228, #ff0047); /* Diagonal gradient effect */
+      color: #F2F2F2;               /* Change text color on hover */
+    }
 
   .profile-container {
     display: flex;                /* Use Flexbox for layout */
     justify-content: space-between; /* Space between items: left and right alignment */
     align-items: center;         /* Center items vertically */
     width: 100%;                 /* Full width of the parent container */
-    padding: 10px;               /* Optional: Add some padding */
+    padding: 10px;   
+    margin-top:10px;       /* Optional: Add some padding */
 
   }
   
   .profile-section {
-    background-color: #fff;
+    background-color: #F2F2F2;
     color: #000;
-    border-radius: 10px;
+    border-radius: 16px;
     padding: 20px;
-    max-width: 600px;
+    width: 800px;  
+    height: 480px; 
+    max-width: 800px;
     margin: 0 auto;
+    justify-content: center;
   }
   
   .profile-img {
@@ -109,70 +213,141 @@
     object-fit: cover; /* Prevent stretching by cropping the image as needed */
     overflow: hidden; /* Ensures that any part of the image that overflows is hidden */
     margin-right: auto;
+    margin-top: 10px;
   }
   
-  .view-portfolio-btn {
-    background-color: #011228;
-    color: #f1f1f1;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-bottom: 30px;
-    margin-left: auto;
-  }
+  .button-icon-container {
+    background-color: #011228; 
+    padding: 20px 30px;
+    margin-right: 5px;
+    display: flex;                  /* Use flexbox for alignment */
+    align-items: center;           /* Center items vertically */
+    gap: 10px;                     /* Space between the button and icon */
+    border: none;                  /* Remove border */
+    border-radius: 80px;            /* Rounded corners for button */
+    cursor: pointer;               /* Cursor style */                
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.view-portfolio-btn {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    background-color: transparent;  /* Customize your button color */
+    color: #F2F2F2;                /* Button text color */
+    border: none;                  /* Remove border */
+    cursor: pointer;               /* Cursor style */
+    outline: none;                 /* Remove outline */
+}
+
+/* Add diagonal gradient background on hover */
+.button-icon-container:hover {
+  background: linear-gradient(45deg, #011228, #ff0047); /* Diagonal gradient effect */
+  color: #F2F2F2;               /* Change text color on hover */}
+
+.arrow-icon {
+    width: 24px;                  /* Set icon width */
+    height: 24px;                 /* Set icon height */
+}
+
 
   h4 {
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
+    color: #011228;
+    font-size: 24px;
+    font-style: medium;
+    font-weight: 600;
+    margin-left: 20px;
     margin-bottom: 10px;
+    text-align: left;
+    margin-top: 10px;
   }
   
   .description {
+    color:#011228;
+    text-align: left;
+    font-style: normal;
+    font-weight: 500;
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 650px;
   }
   
   .social-icons {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    justify-content: left;
+    gap: 12px;
+    margin-top: 15px;
+    margin-left: 20px;
     margin-bottom: 15px;
   }
+
   
   .social-icons img {
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
   }
   
   .tags {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    justify-content: left;
+    gap: 4px;
     margin-bottom: 15px;
+    margin-left: 20px;
+    font-size: 12px;
   }
   
   .tags span {
-    background-color: #ddd;
-    padding: 5px 10px;
+    padding: 4px 4px;
     border-radius: 20px;
-    color: #000;
+    color: #011228;
   }
   
-  .services-section button {
-    background-color: #000;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    margin: 10px;
-    width: 100%;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .services-section {
-    max-width: 600px;
-    margin: 0 auto;
-  }
+ /* Services Section */
+.services-section {
+  max-width: 800px;
+  margin: 0 auto; /* Center the section */
+  padding: 20px; /* Add padding */
+  display: flex; /* Use Flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+/* Service Sections */
+.sections {
+  background-color: #f1f1f1;
+  margin: 10px 0; /* Vertical margin */
+  padding: 24px; /* More padding for better spacing */
+  width:800px; /* Full width of the container */
+  max-width: 800px; /* Limit width */
+  border-radius: 16px;
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center content */
+  align-items: center; /* Center vertically */
+}
+
+/* Service Buttons */
+.services-section button {
+  background-color: #010204;
+  color: #F2F2F2;
+  font-family:'Playfair Display', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  padding: 20px;
+  margin: 10px 0; /* Vertical margin */
+  width: 740px; /* Full width of the container */
+  max-width: 800px; /* Limit width */
+  border-radius: 24px;
+  cursor: pointer;
+  text-align: center; /* Center text inside button */
+  transition: background 0.4s ease, color 0.4s ease; /* Smooth transition */
+  width: 100%;                    /* Full width of the section */
+}
+
+/* Add diagonal gradient background on hover */
+.sections button:hover {
+  background: linear-gradient(45deg, #011228, #ff0047); /* Diagonal gradient effect */
+  color: #F2F2F2;               /* Change text color on hover */
+}
   
