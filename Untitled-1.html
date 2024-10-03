@@ -1,58 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Layout</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif; /* Use a default font */
+<div class="services-section">
+        <div class="sections">
+            <button id="masterclass">Product Design</button> 
+        </div>
+        <div class="sections">
+            <button id="Product-session">Product Design: Book a 1:1 Session</button> 
+        </div>
+        <div class="sections">
+            <button id="Product-session">Product Design: Book a 1:1 Session</button> 
+        </div>
+        <div class="sections">
+            <button id="Excel-session">Excel: Book a 1:1 Session</button>
+        </div>
+        <div class="sections">
+            <button id="internship">Join Aptlearn Internship</button>
+        </div>
+
+
+        .social-icon {
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            display: block;
+            margin: 20px;
+            border-radius: 2px;
+            transition: all 300ms;
+          }
+          
+          .social-icon i {
+            font-size: 30px;
+            line-height: 2.1;
+            vertical-align: middle;
+          }
+          
+          .social-icon.rounded {
+            border-radius: 50%;
+            border: 1px solid rgba(255,255,255,.54);
+          }
+          
+          .dark .social-icon.facebook:hover {
+            box-shadow: 0 5px 8px rgba(26,35,126,0.50);
+            background: #3949ab;
+            background: linear-gradient(to right,#3949ab 0%,#2196f3 100%);
+            background-size: 400%;
+            animation: Gradient 1s ease infinite;
+          }
+          
+          .dark .social-icon.google-plus:hover {
+            box-shadow: 0 5px 8px rgba(244,67,54,0.50);
+            background: #f44336;
+            background: linear-gradient(to right,#f44336 0%,#ff1744 100%);
+            background-size: 400%;
+            animation: Gradient 1s ease infinite;
+          }
+          
+          .dark .social-icon.instagram:hover {
+            box-shadow: 0 5px 8px rgba(63,81,181,0.50);
+            background: #ffc107;
+            background: linear-gradient(to right,#ffc107 0%,#f50057 50%,#3f51b5 100%);
+            background-size: 400%;
+            animation: Gradient 1s ease infinite;
+          }
+          
+          .dark .social-icon.twitter:hover {
+            box-shadow: 0 5px 8px rgba(33,150,243,0.50);
+            background: #00bcd4;
+            background: linear-gradient(to right,#00bcd4 0%,#2196f3 100%);
+            background-size: 400%;
+            animation: Gradient 1s ease infinite;
+          }
+          
+          .dark .social-icon.linkedin:hover {
+            box-shadow: 0 5px 8px rgba(3,169,244,0.50);
+            background: #0288d1;
+            background: linear-gradient(to right,#0288d1 0%,#2196f3 100%);
+            background-size: 400%;
+            animation: Gradient 1s ease infinite;
+          }
+          
+          @keyframes Gradient {
+            0% {
+              background-position: 50%;
+            }
+            50% {
+              background-position: 100% 50%;
+            }
+            100% {
+              background-position: 0 50%;
+            }
+          }
+
+
+          .social-icon {
+            position: relative;
+          }
+          
+          .gradient-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, #3949ab 0%, #2196f3 100%);
+            opacity: 0;
+            transition: opacity 300ms;
+          }
+          
+          
+          
+
+
+          .logo {
+            font-family: 'Manrope', sans-serif;
+            font-size: 14px;
+            font-weight:600;
+            color: #011228;
+            background-color: #F2F2F2;
+            padding: 4px 20px;
+            border: 2px solid #F2F2F2;
+            border-radius: 16px;
         }
 
-        .profile-container {
-            display: flex;                   /* Use Flexbox for layout */
-            align-items: center;             /* Align items vertically centered */
-            justify-content: space-between;  /* Space between the image and button */
-            padding: 20px;                   /* Add some padding for spacing */
-            background-color: white;         /* Optional: Set a background color */
-        }
-
-        .profile-image {
-            flex: 0 0 auto;                  /* Prevent the image from growing or shrinking */
-        }
-
-        .profile-img {
-            width: 150px;                    /* Set image width */
-            height: 150px;                   /* Set image height */
-            border-radius: 50%;              /* Make the image circular */
-            object-fit: cover;               /* Prevent stretching */
-        }
-
-        .profile-name {
-            flex-grow: 1;                    /* Allow the name to take remaining space */
-            margin: 0 20px;                  /* Add horizontal margin for spacing */
-        }
-
-        .visit-store-btn {
-            padding: 10px 20px;              /* Add padding for the button */
-            background-color: #000;          /* Button background color */
-            color: #fff;                     /* Button text color */
-            border: none;                    /* Remove default border */
-            border-radius: 5px;              /* Rounded corners for the button */
-            cursor: pointer;                  /* Change cursor to pointer */
-        }
-    </style>
-</head>
-<body>
-
-<div class="profile-container">
-  <div class="profile-image">
-    <img src="profile-picture.jpg" alt="Adeife Adeoye" class="profile-img">
-  </div>
-  <h2 class="profile-name">Adeife Adeoye</h2>
-  <button class="visit-store-btn">Visit Store</button>
-</div>
-
-</body>
-</html>
+        background: linear-gradient(45deg, #011228, #ff0047); /* Diagonal gradient effect */
+        color: #F2F2F2;               /* Change text color on hover */
