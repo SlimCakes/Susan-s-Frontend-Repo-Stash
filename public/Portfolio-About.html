@@ -79,7 +79,7 @@
     }
         
         P {
-        font-size: 16px;
+        font-size: 24px;
         margin: 20px 0;
         line-height: 1.4; /* Added line-height to improve readability */
         width: 500px;
@@ -246,6 +246,7 @@
     width: 20%;
     font-size: 16px;
     color: #cccccc;
+    font-weight: 700;
     padding-top: 16px;
     text-align: left;
 }
@@ -258,13 +259,15 @@
     font-size: 16px;
     margin-bottom: 4px;
     color: #f1f1f1;
+    font-weight: 500;
     text-align: left;
 }
 
 .role {
     font-size: 12px;
     color: #cccccc;
-    margin-bottom: 16px;
+    font-weight: 500;
+    margin-bottom: 24px;
     text-align: left;
     padding-bottom: 8px;
 }
@@ -274,12 +277,29 @@
         }
 
 .experience-details li {
-    color: #cccccc;
+    color: #f9f6ee;
+    font-weight: 200;
     line-height: 1.5;
     width: auto;
     text-align: left;
     margin-bottom: 10px;
 }
+
+/* footer*/
+.footer-container {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+   }
+   
+   footer {
+            text-align: center;
+            background-color: #00010e;
+            color: #f1f1f1;
+        }
 
 /* Style adjustments for small screens */
 @media (max-width: 1200px) {
@@ -498,7 +518,10 @@
 </section>
 
 <footer>
-    <p>Updated January 2024</p>
+    <div class="footer-container">
+    <p class="footer">Copyright© Susan.Nkere 2024</p>
+    <p class="footer">Updated 2024</p>
+    </div>
 </footer>
 </body>
 </html>
