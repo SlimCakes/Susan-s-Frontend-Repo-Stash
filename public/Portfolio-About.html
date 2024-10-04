@@ -26,8 +26,13 @@
         font-weight: 400; /* Normal */
         font-style: italic;
         }
+        
 
           /* Global Styles */
+
+        * {
+            box-sizing: border-box;
+        }          
           body {
         font-family: 'Poppins', sans-serif;
         margin: 0;
@@ -40,8 +45,9 @@
         header {
         background-color: #00010e;
         color: #f1f1f1;
-        padding: 20px;
+        padding: 10px;
         text-align: center;
+        justify-content: center;
         }
 
         h1 {
@@ -70,19 +76,20 @@
         font-weight: 400;
         margin: 0;
         line-height: 1.4; /* Added line-height to improve readability */
-        }
+    }
         
         P {
         font-size: 16px;
         margin: 20px 0;
         line-height: 1.4; /* Added line-height to improve readability */
+        width: 500px;
         }
 
         
-        header, footer, .intro, #portfolio, .about, .work {
+        header, footer, .about, .work {
         max-width: 1200px; /* Limit content width */
         margin: 0 auto; /* Center the content */
-        padding: 0 20px; /* Add padding for smaller screens */
+        padding: 10px 20px; /* Add padding for smaller screens */
         }
 
         nav {
@@ -116,37 +123,29 @@
             font-size: 16px;
             border-radius: 16px;
             font-weight: 500;
+            transition: background-color 0.3s ease;
         }
 
         .nav-links a:hover {
-            background-color: #555;
+        background: linear-gradient(45deg, #011228, #ff0047); /* Diagonal gradient effect */
+        color: #F2F2F2;
         }
 
-        /* Intro Section */
-        .intro {
-            text-align: left; /* Align text to the left */
-            padding: 20px;
-            background-color: #00010e;
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            cursor: pointer;
         }
-
-        .intro h1 {
-            color: #f1f1f1;
-            padding-left: 20px;
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 5px;
+            transition: all 0.3s ease;
         }
-
-        .intro h2 {
-            font-size: 48px;
-            color: #f1f1f1;
-            padding-left: 20px;
-        }
-
-        .intro h4 {
-            color: #f1f1f1;
-            padding-left: 20px;
-        }
-
         
-             /* About Section */
+        /* About Section */
+
     .about {
         display: flex;
         flex-direction: row;
@@ -155,6 +154,7 @@
         background-color: #00010e;
         align-content: center;
         text-align: center;
+        max-width: 1200px;
     }
     .about-left {
         flex: 1; /* Allow the left side to take up available space */
@@ -163,6 +163,7 @@
         flex-direction: column; /* Align items in a column */
         justify-content: center; /* Center items vertically */
         margin-right: 20px; /* Space between left and right */
+        padding-left: 0 0 0 80px;
     }
 
     .about-right {
@@ -171,13 +172,19 @@
         display: flex; /* Use flexbox for better alignment */
         justify-content: center; /* Center the image vertically */
         align-items: center; /* Align items vertically */
+        padding: 0 0 0 160px ;
     }
 
     .about img {
-        width: 360px;
+        width: 400px;
         height: auto; /* Use auto for better responsiveness */
         border-radius: 8px;
         margin-top: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .about img:hover {
+        transform: scale(1.05);
     }
 
     .contact-button {
@@ -192,17 +199,26 @@
         text-align: center; /* Center text inside the button */
         font-size: 16px;
         font-weight: 200;
+        transition: background-color 0.3s ease;
     }
 
     .contact-button:hover {
-        background-color: #555; /* Darker background on hover */
-    }
+    background: linear-gradient(45deg, #011228, #ff0047); /* Diagonal gradient effect */
+    color: #F2F2F2;               /* Change text color on hover */
+}
 
    /* Work Experience Section */
+   .work-container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 0 20px;
+   }
+   
 .work-experience {
     margin: 100px auto;
     text-align: center;
     color: #f1f1f1;
+    padding: 50px 0;
 }
 
 .work-experience h2 {
@@ -210,51 +226,59 @@
     margin-bottom: 50px;
     letter-spacing: 2px;
     color: #cbcbcb;
-}
-
-.experience-wrapper {
-    width:auto;
-    max-width: 1200px;
-    margin: 0 auto;
+    text-align: center;
 }
 
 .experience-item {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     margin-bottom: 40px;
     border-bottom: 1px solid #444;
     padding-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateX(10px)
 }
 
 .experience-duration {
+    width: 20%;
     font-size: 16px;
     color: #cccccc;
-    width: 20%;
+    padding-top: 16px;
     text-align: left;
 }
 
 .experience-details {
-    width: auto;
-    text-align: left;
+    width: 75%;
 }
 
 .experience-details h3 {
     font-size: 16px;
     margin-bottom: 4px;
     color: #f1f1f1;
+    text-align: left;
 }
 
 .role {
     font-size: 12px;
     color: #cccccc;
     margin-bottom: 16px;
+    text-align: left;
+    padding-bottom: 8px;
 }
 
-.experience-details p {
+.experience-details ul {
+            padding-left: 20px;
+        }
+
+.experience-details li {
     color: #cccccc;
     line-height: 1.5;
     width: auto;
+    text-align: left;
+    margin-bottom: 10px;
 }
 
 /* Style adjustments for small screens */
@@ -314,6 +338,7 @@
 
 <!-- Work Experience Section -->
 <section id="work" class="work-experience">
+    <div class="work-container">
     <h2>Work Experience</h2>
 
     <!-- Job 1 -->
@@ -444,7 +469,6 @@
                 </ul>
             </div>
         </div>
-    </div>
 
         <!-- Job 5 -->
         <div class="experience-item">
@@ -455,8 +479,9 @@
                 <ul>
                     <li>
                         Conducted user research and usability testing to inform design decisions to ensure seamless user experience.
-                        Collaborated with product manager, designers and engineers, to understand user needs and translate them into
-                        intuitive products
+                    </li>
+                    <li>
+                        Collaborated with product manager, designers and engineers, to understand user needs and translate them into intuitive products
                     </li>
                         <li>
                             Created wireframes and prototypes using industry standard tools.
@@ -469,6 +494,7 @@
                 </ul>
             </div>
         </div>
+    </div>
 </section>
 
 <footer>

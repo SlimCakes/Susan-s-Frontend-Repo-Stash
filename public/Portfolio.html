@@ -27,6 +27,72 @@
         font-style: italic;
         }
 
+        /* Declare the font with @font-face */
+        /* Regular */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    /* Bold */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-Bold.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    /* SemiBold */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-SemiBold.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    /* Medium */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    /* Light */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-Light.ttf') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    /* ExtraLight */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-ExtraLight.ttf') format('truetype');
+        font-weight: 200;
+        font-style: normal;
+    }
+
+    /* Thin */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-Thin.ttf') format('truetype');
+        font-weight: 100;
+        font-style: normal;
+    }
+
+    /* Italic */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-Italic.ttf') format('truetype');
+        font-weight: 400;
+        font-style: italic;
+    }
+
+
         /* Global Styles */
         body {
         font-family: 'Poppins', sans-serif;
@@ -66,7 +132,7 @@
         }
 
         h4 {
-        font-size: 24px;
+        font-size: 28px;
         font-weight: 400;
         margin: 0;
         line-height: 1.4; /* Added line-height to improve readability */
@@ -81,7 +147,7 @@
       /* Container styling */
         .container.intro {
         width: 1120px;
-        margin: 0 auto; /* This centers the div horizontally */
+        margin: 20px auto; /* This centers the div horizontally */
         padding: 0; /* Add padding for better spacing inside */
         box-sizing: border-box; /* Ensures padding doesn't affect width */
         }
@@ -127,8 +193,9 @@
         }
 
         .logo {
+            font-family: 'Manrope' sans-serif;
             font-size: 16px;
-            font-weight: bold;
+            font-weight: 600;
             color: #00010e;
             background-color: #f1f1f1;
             padding: 10px 20px;
@@ -272,6 +339,7 @@
         .work-item {
             width: 280px;
             margin: 20px;
+            gap: 10px;
             display: flex;
             flex-direction: column; /* Stack image and caption vertically */
             align-items: center; /* Center-align items */
@@ -295,7 +363,7 @@
 
 
         .work-item img {
-            width: 280px;
+            width: 240px;
             height: auto; /* Use auto for better responsiveness */
             border-radius: 8px;
             margin-top: 20px;
