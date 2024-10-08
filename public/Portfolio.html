@@ -146,9 +146,9 @@
 
       /* Container styling */
         .container.intro {
-        width: 1120px;
+        width: 1200px;
         margin: 20px auto; /* This centers the div horizontally */
-        padding: 0; /* Add padding for better spacing inside */
+        padding: 0 0 0 20px; /* Add padding for better spacing inside */
         box-sizing: border-box; /* Ensures padding doesn't affect width */
         }
     /* Style each heading with different colors */
@@ -216,10 +216,12 @@
             font-size: 16px;
             border-radius: 16px;
             font-weight: 500;
+            transition: background-color 0.3s ease;
         }
 
         .nav-links a:hover {
-            background-color: #555;
+        background: linear-gradient(45deg, #011228, #ff0047); /* Diagonal gradient effect */
+        color: #F2F2F2;
         }
 
         /* Intro Section */
@@ -367,7 +369,13 @@
             height: auto; /* Use auto for better responsiveness */
             border-radius: 8px;
             margin-top: 20px;
+            transition: transform 0.3s ease;
         }
+
+        .work-item:hover img {
+            transform: scale(1.05);
+        }
+
 
         /* Contact Section */
         .contact {
@@ -467,6 +475,7 @@
                     alt="Project 4">
                     <h3>Traclet Landing Page</h3>
                     <p>Shortlet landing page</p>
+                    <button class="outro-button">Learn More</button>
                 </div>
                 <div class="work-item">
                     <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727515421/Shortlet_application_bjefcj.png" 
@@ -519,5 +528,21 @@
             <p>Contact me at <a href="mailto:susannkere@gmail.com">susannkere@gmail.com</a></p>
         </footer>
     </section>
-</body>
+
+    <script>
+        document.querySelectorAll('.work-item').forEach(item => {
+            item.addEventListener('click', (event) => {
+                if (!event.target.matches('.learn-more-btn') && !event.target.closest('.learn-more-btn')) {
+                    alert('Work item clicked! You can replace this with your desired action.');
+                }
+            });
+        });
+
+        document.querySelectorAll('.learn-more-btn').forEach(btn => {
+            btn.addEventListener('click', (event) => {
+                event.stopPropagation();
+                alert('Learn More button clicked! You can replace this with your desired action.');
+            });
+        });
+    </script>
 </html>

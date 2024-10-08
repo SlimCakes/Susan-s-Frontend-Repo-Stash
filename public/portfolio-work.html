@@ -66,7 +66,7 @@
 
         h2 {
         font-size: 40px;
-        font-weight: 300;
+        font-weight: 400;
         margin: 20px 0;
         line-height: 1.1;
         }
@@ -78,14 +78,7 @@
         line-height: 1.4; /* Added line-height to improve readability */
     }
         
-        P {
-        font-size: 16px;
-        margin: 20px 0;
-        line-height: 1.4; /* Added line-height to improve readability */
-        width: 500px;
-        color: #f9f6ee;
-        font-weight: 200;
-        }
+      
 
         
         header, footer, .about, .work {
@@ -148,24 +141,26 @@
         
         /* Works Section */
 
-        .works {
+    .works {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    justify-content: left;
+    align-items: left;
     background-color: #00010e; /* Dark background */
-    color: #a8e5e5; /* Light blue text color */
-    padding: 20px;
+    color: #f9f6ee; /* Light blue text color */
+    padding: 50px 70px 20px 70px;
 }
 
 .works-top {
-    max-width: 800px;
-    text-align: center;
+    max-width: 1200px;
+    text-align: left;
 }
 
 .works-top p {
+    max-width: 1200px;
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.2;
+    font-size: 40px;
+    font-weight: 400;
 }
 
     
@@ -176,47 +171,85 @@
             background-color: #00010e;
         }
 
-        .works {
-            justify-content: space-around;
-            align-content: center;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr); /* 3 equal-width columns */
-            gap: 20px; /* Space between the items */
-            max-width: 1200px; /* Optional max-width to control the container width */;
-        }
+    .work-selection {
+        justify-content: space-around;
+        align-content: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 3 equal-width columns */
+        gap: 20px; /* Space between the items */
+        max-width: 1200px; /* Optional max-width to control the container width */;
+    }
 
-        .work-item {
-            width: 280px;
-            margin: 20px;
-            gap: 10px;
-            display: flex;
-            flex-direction: column; /* Stack image and caption vertically */
-            align-items: center; /* Center-align items */
-            text-align: center; /* Center text within the div */
-            max-width: 200px; /* Restrict width as necessary */
-        }
+    .work-item {
+        width: 280px;
+        margin: 20px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column; /* Stack image and caption vertically */
+        align-items: center; /* Center-align items */
+        text-align: center; /* Center text within the div */
+        max-width: 200px; /* Restrict width as necessary */
+    }
 
-        .work-item h3 {
-            margin-top: 20px;
-            margin-bottom: 4px; /* Adjust this value as needed for space below the heading */
-            font-size: 16px;
-            width: auto;
-        }
+    .text-content {
+        width: 280px;
+        margin: 20px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column; /* Stack image and caption vertically */
+        align-items: center; /* Center-align items */
+        text-align: center; /* Center text within the div */
+        max-width: 200px; /* Restrict width as necessary */
+}
 
-        .work-item p {
-            margin-top: 4px; /* Adjust this value for space above the paragraph */
-            margin-bottom: 15px; /* Optional: control space below paragraphs */
-            font-size: 12px;
-            width: auto;
-        }
+.text-content h3 {
+    margin-top: 20px;
+    margin-bottom: 4px; /* Adjust this value as needed for space below the heading */
+    font-size: 16px;
+    font-weight: 600;
+    width: auto;
+}
+
+.text-content p {
+    margin-top: 4px; /* Adjust this value for space above the paragraph */
+    margin-bottom: 15px; /* Optional: control space below paragraphs */
+    font-size: 12px;
+    width: auto;
+}
 
 
-        .work-item img {
-            width: 240px;
-            height: auto; /* Use auto for better responsiveness */
-            border-radius: 8px;
-            margin-top: 20px;
-        }
+    .work-item img {
+        width: 240px;
+        height: auto; /* Use auto for better responsiveness */
+        border-radius: 8px;
+        margin-top: 20px;
+        transition: transform 0.3s ease; /* Added transition for smooth scaling */
+}
+
+/* Arrow button (hidden initially) */
+    .arrow-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px; /* Adjust the size of the arrow */
+    opacity: 0; /* Initially hide the arrow */
+    transition: opacity 0.3s ease; /* Smooth transition for the opacity */
+}
+
+/* Show arrow on hover */
+.work-item:hover .arrow-button {
+    opacity: 1; /* Make the arrow visible on hover */
+    cursor: grab;
+}
+
+/* Optionally, style the hover effect for the image */
+.work-item:hover img {
+    filter: brightness(70%); /* Darken the image on hover */
+    transition: filter 0.3s ease;
+    cursor: pointer;
+
+}
 
 /* footer*/
 .footer-container {
@@ -275,7 +308,7 @@
 <section id="works" class="works">
     <div class="works-top">
         <p>
-            In over three(3) years i have worked in diverse fields with different companies, learning and implementing. i have learned UI-UX design and also taken the bold step to Code my own portfolio.
+            In over three(3) years, I have worked in diverse fields with different companies, learning and implementing. I have learned UI-UX design and also taken the bold step to Code my own portfolio.
         </p>
     </div>
 </section>
@@ -283,55 +316,91 @@
  <!-- Work Section -->
  <section id="work" class="work">
     <h2>Work (2022 - 2023)</h2>
-    <div class="works">
-        <div class="work-item">
+    <div class="work-selection">
+        <div class="work-item" onmouseover="showArrow(this)" onmouseout="hideArrow(this)">
             <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727515387/shortlet_landing_page-agent_iu6n1u.png" 
             alt="Project 4">
+            <img class="arrow-icon" src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727790734/Style7_c0lmol.svg" alt="Arrow Icon">
+            <div class="text-content">
             <h3>Traclet Landing Page</h3>
             <p>Shortlet landing page</p>
         </div>
-        <div class="work-item">
-            <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727515421/Shortlet_application_bjefcj.png" 
-            alt="Project 5">
-            <h3>Traclet Mobile App</h3>
-            <p>Shortlet mobile application</p>
         </div>
-        <div class="work-item">
+
+        <div class="work-item" onmouseover="showArrow(this)" onmouseout="hideArrow(this)">
+    <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727515421/Shortlet_application_bjefcj.png" 
+         alt="Project 5">
+    <img class="arrow-icon" src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727790734/Style7_c0lmol.svg" alt="Arrow Icon">
+    <div class="text-content">
+        <h3>Traclet Mobile App</h3>
+        <p>Shortlet mobile application</p>
+    </div>
+</div>
+        <div class="work-item" onmouseover="showArrow(this)" onmouseout="hideArrow(this)">
             <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727515443/shortlet_admin_dashboard_az3rcb.png" 
             alt="Project 6">
+            <img class="arrow-icon" src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727790734/Style7_c0lmol.svg" 
+            alt="Arrow Icon">
+            <div class="text-content">
             <h3>Traclet Admin Dashboard</h3>
             <p>Shortelet admin dashboard</p>
+           </div>
         </div>
-        <div class="work-item">
+
+        <div class="work-item" onmouseover="showArrow(this)" onmouseout="hideArrow(this)">
             <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727515419/comapny_website_w2z9wc.png" 
             alt="Project 7">
+            <img class="arrow-icon" src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727790734/Style7_c0lmol.svg" 
+            alt="Arrow Icon">
+            <div class="text-content">
             <h3>525 System</h3>
             <p>Company Website</p>
-        </div>
-        <div class="work-item">
+           </div>
+           </div>
+
+           <div class="work-item" onmouseover="showArrow(this)" onmouseout="hideArrow(this)">
             <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727538187/Shortlet_application_4_chuaji.png" 
             alt="Project 11">
+            <img class="arrow-icon" src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727790734/Style7_c0lmol.svg" 
+            alt="Arrow Icon">
+            <div class="text-content">
             <h3>Weather For Two</h3>
             <p>Beddings websie design</p>
-          </div>
-          <div class="work-item">
+           </div>
+           </div>
+
+           <div class="work-item" onmouseover="showArrow(this)" onmouseout="hideArrow(this)">
             <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727538159/shortlet_admin_dashboard_2_c87uqb.png" 
             alt="Project 10">
+            <img class="arrow-icon" src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727790734/Style7_c0lmol.svg" 
+            alt="Arrow Icon">
+            <div class="text-content">
             <h3>DC Food bank</h3>
             <p>Food bank website design</p>
-          </div>
-          <div class="work-item">
+            </div>
+        </div>
+
+        <div class="work-item" onmouseover="showArrow(this)" onmouseout="hideArrow(this)">
             <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727539051/Evercrest_bj1ijv.jpg" 
             alt="Project 9">
+            <img class="arrow-icon" src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727790734/Style7_c0lmol.svg" 
+            alt="Arrow Icon">
+            <div class="text-content">
             <h3>Evercrest High school</h3>
             <p>Website design</p>
           </div>
+          </div>
+
         <div class="work-item">
             <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727538185/Shortlet_application_2_mqvqk6.png" 
             alt="Project 8">
+            <img class="arrow-icon" src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727790734/Style7_c0lmol.svg" 
+            alt="Arrow Icon">
+            <div class="text-content">
             <h3>UBA</h3>
             <p>Mobile application redesign</p>
-        </div>
+          </div>
+          </div>
     </div>
 </section>
 
@@ -341,5 +410,18 @@
     <p class="footer">Updated 2024</p>
     </div>
 </footer>
+
+<script>
+
+function showArrow(element) {
+    const arrowIcon = element.querySelector('.arrow-icon');
+    arrowIcon.style.opacity = '1';
+}
+
+function hideArrow(element) {
+    const arrowIcon = element.querySelector('.arrow-icon');
+    arrowIcon.style.opacity = '0';
+}
+</script>
 </body>
 </html>
