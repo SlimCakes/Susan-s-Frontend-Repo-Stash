@@ -140,7 +140,6 @@
         }
         
         /* Works Section */
-
     .works {
     display: flex;
     justify-content: left;
@@ -148,7 +147,7 @@
     background-color: #00010e; /* Dark background */
     color: #f9f6ee; /* Light blue text color */
     padding: 50px 70px 20px 70px;
-}
+    }
 
 .works-top {
     max-width: 1200px;
@@ -175,44 +174,44 @@
         justify-content: space-around;
         align-content: center;
         display: grid;
-        grid-template-columns: repeat(4, 1fr); /* 3 equal-width columns */
-        gap: 20px; /* Space between the items */
-        max-width: 1200px; /* Optional max-width to control the container width */;
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 20px; 
+        max-width: 1200px; 
     }
 
     .work-item {
+        position: relative;
         width: 280px;
-        margin: 20px;
-        gap: 10px;
+        margin: 10px;
         display: flex;
-        flex-direction: column; /* Stack image and caption vertically */
-        align-items: center; /* Center-align items */
-        text-align: center; /* Center text within the div */
-        max-width: 200px; /* Restrict width as necessary */
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+        max-width: 200px;
     }
 
     .text-content {
         width: 280px;
-        margin: 20px;
+        margin: 10px 0 0 0; 
         gap: 10px;
         display: flex;
-        flex-direction: column; /* Stack image and caption vertically */
-        align-items: center; /* Center-align items */
-        text-align: center; /* Center text within the div */
-        max-width: 200px; /* Restrict width as necessary */
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+        max-width: 200px; 
 }
 
 .text-content h3 {
     margin-top: 20px;
-    margin-bottom: 4px; /* Adjust this value as needed for space below the heading */
+    margin-bottom: 4px; 
     font-size: 16px;
     font-weight: 600;
     width: auto;
 }
 
 .text-content p {
-    margin-top: 4px; /* Adjust this value for space above the paragraph */
-    margin-bottom: 15px; /* Optional: control space below paragraphs */
+    margin-top: 4px; 
+    margin-bottom: 15px; 
     font-size: 12px;
     width: auto;
 }
@@ -229,23 +228,27 @@
 /* Arrow button (hidden initially) */
     .arrow-icon {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40px; /* Adjust the size of the arrow */
-    opacity: 0; /* Initially hide the arrow */
-    transition: opacity 0.3s ease; /* Smooth transition for the opacity */
+    top: 14px;
+    right: -10px;
+    transform: translate(-10%, -10%);
+    width: 24px; 
+    height: 24px;
+    max-width: 24px;  
+    max-height: 24px; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    z-index: 2; 
 }
 
 /* Show arrow on hover */
-.work-item:hover .arrow-button {
-    opacity: 1; /* Make the arrow visible on hover */
-    cursor: grab;
+.work-item:hover .arrow-icon {
+    opacity: 1; 
+    transform: translate(-10%, -10%) scale(1.2);
 }
 
 /* Optionally, style the hover effect for the image */
 .work-item:hover img {
-    filter: brightness(70%); /* Darken the image on hover */
+    filter: brightness(70%); 
     transition: filter 0.3s ease;
     cursor: pointer;
 
@@ -278,7 +281,7 @@
     .experience-duration,
     .experience-details {
         width: auto;
-        text-align: center; /* Align the text in the center for mobile devices */
+        text-align: center; 
     }
 
     .experience-duration {
@@ -320,7 +323,8 @@
         <div class="work-item" onmouseover="showArrow(this)" onmouseout="hideArrow(this)">
             <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727515387/shortlet_landing_page-agent_iu6n1u.png" 
             alt="Project 4">
-            <img class="arrow-icon" src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727790734/Style7_c0lmol.svg" alt="Arrow Icon">
+            <img class="arrow-icon" src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1728411422/arrow-right_bacwkg.svg" 
+            alt="Arrow Icon">
             <div class="text-content">
             <h3>Traclet Landing Page</h3>
             <p>Shortlet landing page</p>
@@ -330,7 +334,8 @@
         <div class="work-item" onmouseover="showArrow(this)" onmouseout="hideArrow(this)">
     <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727515421/Shortlet_application_bjefcj.png" 
          alt="Project 5">
-    <img class="arrow-icon" src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727790734/Style7_c0lmol.svg" alt="Arrow Icon">
+    <img class="arrow-icon" src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1728411422/arrow-right_bacwkg.svg" 
+    alt="Arrow Icon">
     <div class="text-content">
         <h3>Traclet Mobile App</h3>
         <p>Shortlet mobile application</p>
@@ -339,7 +344,7 @@
         <div class="work-item" onmouseover="showArrow(this)" onmouseout="hideArrow(this)">
             <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727515443/shortlet_admin_dashboard_az3rcb.png" 
             alt="Project 6">
-            <img class="arrow-icon" src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727790734/Style7_c0lmol.svg" 
+            <img class="arrow-icon" src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1728411422/arrow-right_bacwkg.svg" 
             alt="Arrow Icon">
             <div class="text-content">
             <h3>Traclet Admin Dashboard</h3>
@@ -350,7 +355,7 @@
         <div class="work-item" onmouseover="showArrow(this)" onmouseout="hideArrow(this)">
             <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727515419/comapny_website_w2z9wc.png" 
             alt="Project 7">
-            <img class="arrow-icon" src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727790734/Style7_c0lmol.svg" 
+            <img class="arrow-icon" src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1728411422/arrow-right_bacwkg.svg" 
             alt="Arrow Icon">
             <div class="text-content">
             <h3>525 System</h3>
@@ -361,7 +366,7 @@
            <div class="work-item" onmouseover="showArrow(this)" onmouseout="hideArrow(this)">
             <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727538187/Shortlet_application_4_chuaji.png" 
             alt="Project 11">
-            <img class="arrow-icon" src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727790734/Style7_c0lmol.svg" 
+            <img class="arrow-icon" src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1728411422/arrow-right_bacwkg.svg" 
             alt="Arrow Icon">
             <div class="text-content">
             <h3>Weather For Two</h3>
@@ -372,7 +377,7 @@
            <div class="work-item" onmouseover="showArrow(this)" onmouseout="hideArrow(this)">
             <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727538159/shortlet_admin_dashboard_2_c87uqb.png" 
             alt="Project 10">
-            <img class="arrow-icon" src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727790734/Style7_c0lmol.svg" 
+            <img class="arrow-icon" src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1728411422/arrow-right_bacwkg.svg" 
             alt="Arrow Icon">
             <div class="text-content">
             <h3>DC Food bank</h3>
@@ -383,7 +388,7 @@
         <div class="work-item" onmouseover="showArrow(this)" onmouseout="hideArrow(this)">
             <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727539051/Evercrest_bj1ijv.jpg" 
             alt="Project 9">
-            <img class="arrow-icon" src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727790734/Style7_c0lmol.svg" 
+            <img class="arrow-icon" src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1728411422/arrow-right_bacwkg.svg" 
             alt="Arrow Icon">
             <div class="text-content">
             <h3>Evercrest High school</h3>
@@ -394,7 +399,7 @@
         <div class="work-item">
             <img src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727538185/Shortlet_application_2_mqvqk6.png" 
             alt="Project 8">
-            <img class="arrow-icon" src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1727790734/Style7_c0lmol.svg" 
+            <img class="arrow-icon" src="https://res.cloudinary.com/dxgoaa5mn/image/upload/v1728411422/arrow-right_bacwkg.svg" 
             alt="Arrow Icon">
             <div class="text-content">
             <h3>UBA</h3>
@@ -412,7 +417,6 @@
 </footer>
 
 <script>
-
 function showArrow(element) {
     const arrowIcon = element.querySelector('.arrow-icon');
     arrowIcon.style.opacity = '1';
