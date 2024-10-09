@@ -1,0 +1,318 @@
+   /* Declare the font with @font-face */
+        @font-face {
+        font-family: 'Poppins';
+        src: url('Fonts/Poppins-Regular.ttf') format('truetype');
+        font-weight: 400; /* Normal */
+        font-style: normal;
+        }
+
+        @font-face {
+        font-family: 'Poppins';
+        src: url('Fonts/Poppins-Bold.ttf') format('truetype');
+        font-weight: 700; /* Bold */
+        font-style: normal;
+        }
+
+        @font-face {
+        font-family: 'Poppins';
+        src: url('Fonts/Poppins-Italic.ttf') format('truetype');
+        font-weight: 400; /* Normal */
+        font-style: italic;
+        }
+        
+
+          /* Global Styles */
+
+        * {
+            box-sizing: border-box;
+        }          
+          body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #00010e;
+        color: #f1f1f1;
+        line-height: 1.2; /* Adding a default line height */
+        }
+
+        header {
+        background-color: #00010e;
+        color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
+        }
+
+        h1 {
+        font-size: 72px;
+        font-weight: 400; /* Set h1 to bold */
+        margin: 0; /* 10px margin for H1 */
+        letter-spacing: -2px;
+        }
+
+        h1 span {
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 96px;
+        font-weight: 400; /* Set font weight for span */
+        }
+
+        h2 {
+        font-size: 40px;
+        font-weight: 300;
+        margin: 20px 0;
+        line-height: 1.1;
+        }
+
+        h4 {
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0;
+        line-height: 1.4; /* Added line-height to improve readability */
+    }
+        
+        P {
+        font-size: 16px;
+        margin: 20px 0;
+        line-height: 1.4; /* Added line-height to improve readability */
+        width: 500px;
+        color: #f9f6ee;
+        font-weight: 200;
+        }
+
+        
+        header, footer, .about, .work {
+        max-width: 1200px; /* Limit content width */
+        margin: 0 auto; /* Center the content */
+        padding: 10px 20px; /* Add padding for smaller screens */
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #00010e;
+        }
+
+        .logo {
+            font-size: 16px;
+            font-weight: 500;
+            color: #00010e;
+            background-color: #f1f1f1;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 16px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #00010e;
+            background-color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 16px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+        background: linear-gradient(45deg, #011228, #ff0047); /* Diagonal gradient effect */
+        color: #F2F2F2;
+        }
+
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        /* About Section */
+
+    .about {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /* Align items on both sides */
+        padding: 50px;
+        background-color: #00010e;
+        align-content: center;
+        text-align: center;
+        max-width: 1200px;
+    }
+    .about-left {
+        flex: 1; /* Allow the left side to take up available space */
+        text-align: left; /* Center align text horizontally */
+        display: flex; /* Use flexbox for vertical centering */
+        flex-direction: column; /* Align items in a column */
+        justify-content: center; /* Center items vertically */
+        margin-right: 20px; /* Space between left and right */
+        padding-left: 0 0 0 80px;
+    }
+
+    .about-right {
+        flex: 1; /* Allow the right side to take up available space */
+        text-align: left; /* Align text to the right */
+        display: flex; /* Use flexbox for better alignment */
+        justify-content: center; /* Center the image vertically */
+        align-items: center; /* Align items vertically */
+        padding: 0 0 0 160px ;
+    }
+
+    .about img {
+        width: 400px;
+        height: auto; /* Use auto for better responsiveness */
+        border-radius: 8px;
+        margin-top: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .about img:hover {
+        transform: scale(1.05);
+    }
+
+    .contact-button {
+        margin-top: 20px; /* Space above the button */
+        padding: 10px 20px; /* Button padding */
+        background-color: white; /* Button background color */
+        color: #00010e; /* Button text color */
+        border: none; /* Remove border */
+        border-radius: 16px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor on hover */
+        width: 150px; /* Fixed width for the button */
+        text-align: center; /* Center text inside the button */
+        font-size: 16px;
+        font-weight: 500;
+        transition: background-color 0.3s ease;
+    }
+
+    .contact-button:hover {
+    background: linear-gradient(45deg, #011228, #ff0047); /* Diagonal gradient effect */
+    color: #F2F2F2;               /* Change text color on hover */
+}
+
+   /* Work Experience Section */
+   .work-container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 0 20px;
+   }
+   
+.work-experience {
+    margin: 100px auto;
+    text-align: center;
+    color: #f1f1f1;
+    padding: 50px 0;
+}
+
+.work-experience h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    color: #cbcbcb;
+    text-align: center;
+}
+
+.experience-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateX(10px)
+}
+
+.experience-duration {
+    width: 20%;
+    font-size: 16px;
+    color: #cccccc;
+    font-weight: 700;
+    padding-top: 16px;
+    text-align: left;
+}
+
+.experience-details {
+    width: 75%;
+}
+
+.experience-details h3 {
+    font-size: 16px;
+    margin-bottom: 4px;
+    color: #f1f1f1;
+    font-weight: 500;
+    text-align: left;
+}
+
+.role {
+    font-size: 12px;
+    color: #cccccc;
+    font-weight: 500;
+    margin-bottom: 24px;
+    text-align: left;
+    padding-bottom: 8px;
+}
+
+.experience-details ul {
+            padding-left: 20px;
+        }
+
+.experience-details li {
+    color: #f9f6ee;
+    font-weight: 200;
+    line-height: 1.5;
+    width: auto;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* footer*/
+.footer-container {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+   }
+   
+   footer {
+            text-align: center;
+            background-color: #00010e;
+            color: #f1f1f1;
+        }
+
+/* Style adjustments for small screens */
+@media (max-width: 1200px) {
+    .experience-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .experience-duration,
+    .experience-details {
+        width: auto;
+        text-align: center; /* Align the text in the center for mobile devices */
+    }
+
+    .experience-duration {
+        margin-bottom: 10px;
+    }
+    
+}

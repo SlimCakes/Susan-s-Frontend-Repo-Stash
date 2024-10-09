@@ -1,0 +1,339 @@
+ /* Declare the font with @font-face */
+        @font-face {
+        font-family: 'Poppins';
+        src: url('Fonts/Poppins-Regular.ttf') format('truetype');
+        font-weight: 400; /* Normal */
+        font-style: normal;
+        }
+
+        @font-face {
+        font-family: 'Poppins';
+        src: url('Fonts/Poppins-Bold.ttf') format('truetype');
+        font-weight: 700; /* Bold */
+        font-style: normal;
+        }
+
+        @font-face {
+        font-family: 'Poppins';
+        src: url('Fonts/Poppins-Italic.ttf') format('truetype');
+        font-weight: 400; /* Normal */
+        font-style: italic;
+        }
+        
+            /* Bold */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-Bold.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    /* SemiBold */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-SemiBold.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    /* Medium */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    /* Light */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-Light.ttf') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    /* ExtraLight */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-ExtraLight.ttf') format('truetype');
+        font-weight: 200;
+        font-style: normal;
+    }
+
+    /* Thin */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-Thin.ttf') format('truetype');
+        font-weight: 100;
+        font-style: normal;
+    }
+
+    /* Italic */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-Italic.ttf') format('truetype');
+        font-weight: 400;
+        font-style: italic;
+    }
+    
+
+          /* Global Styles */
+
+        * {
+            box-sizing: border-box;
+        }          
+          body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #00010e;
+        color: #f1f1f1;
+        line-height: 1.2; /* Adding a default line height */
+        }
+
+        header {
+        background-color: #00010e;
+        color: #f1f1f1;
+        padding: 10px;
+        text-align: center;
+        justify-content: center;
+        }
+
+        h1 {
+        font-size: 72px;
+        font-weight: 400; /* Set h1 to bold */
+        margin: 0; /* 10px margin for H1 */
+        letter-spacing: -2px;
+        }
+
+        h1 span {
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 96px;
+        font-weight: 400; /* Set font weight for span */
+        }
+
+        h2 {
+        font-size: 40px;
+        font-weight: 400;
+        margin: 20px 0;
+        line-height: 1.1;
+        }
+
+        h4 {
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0;
+        line-height: 1.4; /* Added line-height to improve readability */
+    }
+        
+      
+
+        
+        header, footer, .about, .work {
+        max-width: 1200px; /* Limit content width */
+        margin: 0 auto; /* Center the content */
+        padding: 10px 20px; /* Add padding for smaller screens */
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #00010e;
+        }
+
+        .logo {
+            font-family: 'Manrope' sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: #00010e;
+            background-color: #f1f1f1;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 16px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #00010e;
+            background-color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 16px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+        background: linear-gradient(45deg, #011228, #ff0047); /* Diagonal gradient effect */
+        color: #F2F2F2;
+        }
+
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        /* Works Section */
+    .works {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    background-color: #00010e; /* Dark background */
+    color: #f9f6ee; /* Light blue text color */
+    padding: 50px 70px 20px 70px;
+    }
+
+.works-top {
+    max-width: 1200px;
+    text-align: left;
+}
+
+.works-top p {
+    max-width: 1200px;
+    margin: 0;
+    line-height: 1.2;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+    
+ /* Work Section */
+ .work {
+            padding: 50px;
+            text-align: center;
+            background-color: #00010e;
+        }
+
+    .work-selection {
+        justify-content: space-around;
+        align-content: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 60px; 
+        max-width: 1200px; 
+    }
+
+    .work-item {
+        position: relative;
+        width: 280px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+        max-width: 200px;
+    }
+
+    .text-content {
+        width: 240px;
+        margin: 5px 0 0 0; 
+        display: flex;
+        flex-direction: column; 
+        align-items: left; 
+        text-align: left; 
+        max-width: 240px; 
+}
+
+.text-content h3 {
+    margin-top: 5px;
+    margin-bottom: 4px; 
+    font-size: 16px;
+    font-weight: 600;
+    width: auto;
+}
+
+.text-content p {
+    margin-bottom: 15px; 
+    font-size: 12px;
+    width: auto;
+}
+
+
+    .work-item img {
+        width: 240px;
+        height: auto; /* Use auto for better responsiveness */
+        border-radius: 8px;
+        margin-top: 20px;
+        transition: transform 0.3s ease; /* Added transition for smooth scaling */
+}
+
+/* Arrow button (hidden initially) */
+    .arrow-icon {
+    position: absolute;
+    top: 14px;
+    right: -10px;
+    transform: translate(-10%, -10%);
+    width: 24px; 
+    height: 24px;
+    max-width: 24px;  
+    max-height: 24px; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    z-index: 2; 
+}
+
+/* Show arrow on hover */
+.work-item:hover .arrow-icon {
+    opacity: 1; 
+    transform: translate(-10%, -10%) scale(1.2);
+}
+
+/* Optionally, style the hover effect for the image */
+.work-item:hover img {
+    filter: brightness(70%); 
+    transition: filter 0.3s ease;
+    cursor: pointer;
+
+}
+
+/* footer*/
+.footer-container {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+   }
+   
+   footer {
+            text-align: center;
+            background-color: #00010e;
+            color: #f1f1f1;
+        }
+
+/* Style adjustments for small screens */
+@media (max-width: 1200px) {
+    .experience-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .experience-duration,
+    .experience-details {
+        width: auto;
+        text-align: center; 
+    }
+
+    .experience-duration {
+        margin-bottom: 10px;
+    }
+    
+}

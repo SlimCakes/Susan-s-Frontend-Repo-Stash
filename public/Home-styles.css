@@ -1,0 +1,437 @@
+  /* Declare the font with @font-face */
+        @font-face {
+        font-family: 'Poppins';
+        src: url('Fonts/Poppins-Regular.ttf') format('truetype');
+        font-weight: 400; /* Normal */
+        font-style: normal;
+        }
+
+        @font-face {
+        font-family: 'Poppins';
+        src: url('Fonts/Poppins-Bold.ttf') format('truetype');
+        font-weight: 700; /* Bold */
+        font-style: normal;
+        }
+
+        @font-face {
+        font-family: 'Poppins';
+        src: url('Fonts/Poppins-Italic.ttf') format('truetype');
+        font-weight: 400; /* Normal */
+        font-style: italic;
+        }
+
+        /* Declare the font with @font-face */
+        /* Regular */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    /* Bold */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-Bold.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    /* SemiBold */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-SemiBold.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    /* Medium */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    /* Light */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-Light.ttf') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    /* ExtraLight */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-ExtraLight.ttf') format('truetype');
+        font-weight: 200;
+        font-style: normal;
+    }
+
+    /* Thin */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-Thin.ttf') format('truetype');
+        font-weight: 100;
+        font-style: normal;
+    }
+
+    /* Italic */
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./Fonts/Manrope-Italic.ttf') format('truetype');
+        font-weight: 400;
+        font-style: italic;
+    }
+
+
+        /* Global Styles */
+        body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #00010e;
+        color: #f1f1f1;
+        line-height: 1.2; 
+        }
+
+        header {
+        background-color: #00010e;
+        color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+        }
+
+        h1 {
+        font-size: 72px;
+        font-weight: 400; 
+        margin: 0; 
+        letter-spacing: -2px;
+        }
+
+        h1 span {
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 96px;
+        font-weight: 400; 
+        }
+
+        h2 {
+        font-size: 48px;
+        font-weight: 400;
+        margin: 20px 0;
+        line-height: 1.1;
+        }
+
+        h4 {
+        font-size: 28px;
+        font-weight: 400;
+        margin: 0;
+        line-height: 1.4; 
+        }
+        
+        P {
+        font-size: 16px;
+        margin: 20px 0;
+        line-height: 1.4; 
+        }
+
+      /* Container styling */
+        .container.intro {
+        width: 1200px;
+        margin: 20px auto; 
+        padding: 0 0 0 20px; 
+        box-sizing: border-box; 
+        }
+    /* Style each heading with different colors */
+        .container.intro h1 {
+        color: #F1f1f1; 
+        }
+
+        .container.intro h2 {
+        color: #f1f1f1; 
+        font-size: 72px;
+        font-weight: 400;
+        margin: 0;
+        padding-bottom: 32px;
+        line-height: 1.1;
+        letter-spacing: -2px;
+        }
+
+        .container.intro h4 {
+        color: #b0b0b0; 
+        font-size: 24px;
+        font-weight: 400;
+        margin: 20px 0;
+        line-height: 1.4; 
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        header, footer, .intro, #portfolio, .about, .work {
+        max-width: 1200px; 
+        margin: 0 auto; 
+        padding: 0 20px; 
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #00010e;
+        }
+
+        .logo {
+            font-family: 'Manrope' sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #00010e;
+            background-color: #f1f1f1;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 16px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #00010e;
+            background-color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 16px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+        background: linear-gradient(45deg, #011228, #ff0047); 
+        color: #F2F2F2;
+        }
+
+        /* Intro Section */
+        .intro {
+            text-align: left; 
+            padding: 20px;
+            background-color: #00010e;
+        }
+
+        .intro h1 {
+            color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        .intro h2 {
+            font-size: 48px;
+            color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        .intro h4 {
+            color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        #portfolio {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto; 
+            overflow-y: hidden; 
+            justify-content: space-around;
+            margin: 40px 0;
+            width: auto;
+            max-width: none;
+        }
+
+        .project img {
+            width: 280px;
+            height: auto;
+            border-radius: 0px;
+            flex-shrink: 0;
+        }
+
+         /* About Section */
+    .about {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        padding: 50px;
+        background-color: #00010e;
+        align-content: center;
+        text-align: center;
+    }
+    .about-left {
+        flex: 1; 
+        text-align: left; 
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        margin-right: 20px; 
+    }
+
+    .about-right {
+        flex: 1; 
+        text-align: left; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .about img {
+        width: 360px;
+        height: auto; 
+        border-radius: 8px;
+        margin-top: 20px;
+    }
+
+    .contact-button {
+        margin-top: 20px; 
+        padding: 10px 20px; 
+        background-color: white; 
+        color: #00010e; 
+        border: none; 
+        border-radius: 16px; 
+        cursor: pointer; 
+        width: 150px; 
+        text-align: center; 
+        font-size: 16px;
+        font-weight: 200;
+    }
+
+    .contact-button:hover {
+        background-color: #555; 
+    }
+
+           /* Work Section */
+    .work {
+            padding: 50px;
+            text-align: center;
+            background-color: #00010e;
+        }
+
+    .work-selection {
+        justify-content: space-around;
+        align-content: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 60px; 
+        max-width: 1200px; 
+    }
+
+    .work-item {
+        position: relative;
+        width: 280px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+        max-width: 200px;
+    }
+
+    .text-content {
+        width: 240px;
+        margin: 0 0 0 0; 
+        display: flex;
+        flex-direction: column; 
+        align-items: left; 
+        text-align: left; 
+        max-width: 240px; 
+    }
+
+    .text-content h3 {
+        margin-top: 5px;
+        font-size: 16px;
+        font-weight: 600;
+        width: auto;
+    }
+
+    .text-content p {
+        margin-bottom: 10px; 
+        font-size: 12px;
+        width: auto;
+    }
+
+
+    .work-item img {
+        width: 240px;
+        height: auto; /* Use auto for better responsiveness */
+        border-radius: 8px;
+        margin-top: 20px;
+        transition: transform 0.3s ease; /* Added transition for smooth scaling */
+    }
+
+/* Arrow button (hidden initially) */
+    .arrow-icon {
+    position: absolute;
+    top: 14px;
+    right: -10px;
+    transform: translate(-10%, -10%);
+    width: 24px; 
+    height: 24px;
+    max-width: 24px;  
+    max-height: 24px; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    z-index: 2; 
+}
+
+/* Show arrow on hover */
+.work-item:hover .arrow-icon {
+    opacity: 1; 
+    transform: translate(-10%, -10%) scale(1.2);
+}
+
+/* Optionally, style the hover effect for the image */
+.work-item:hover img {
+    filter: brightness(70%); 
+    transition: filter 0.3s ease;
+    cursor: pointer;
+
+}
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+            padding: 40px;
+            background-color: #00010e;
+        }
+
+        .contact a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+/* Style adjustments for small screens */
+@media (max-width: 1200px) {
+    .experience-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .experience-duration,
+    .experience-details {
+        width: auto;
+        text-align: center; 
+    }
+
+    .experience-duration {
+        margin-bottom: 10px;
+    }
+    
+}
