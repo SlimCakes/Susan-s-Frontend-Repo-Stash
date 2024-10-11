@@ -88,7 +88,7 @@
 
         /* Global Styles */
         body {
-        font-family: 'Manrope', sans-serif;
+        font-family: 'Poppins', sans-serif;
         margin: 0;
         padding: 0;
         background-color: #00010e;
@@ -191,6 +191,7 @@
         }
 
         .logo {
+            font-family: 'Manrope' sans-serif;
             font-size: 16px;
             font-weight: 500;
             color: #00010e;
@@ -315,10 +316,11 @@
 
     .about-left h2 {
         font-family: 'Poppins', sans-serif;
-        font-weight: 400;
-        font-size: 36px;
+        font-weight: 300;
+        font-size: 40px;
         color: #f9f6ee;
-        margin-bottom: 20px;
+        margin-bottom: 20px 0;
+        line-height: 1.1;
     }
     
     .about-left p {
@@ -358,94 +360,94 @@
     color: #F2F2F2;
     }
 
-           /* Work Section */
-    .work {
-            padding: 50px;
-            text-align: center;
-            background-color: #00010e;
-        }
+/* Work Section */
+ .work {
+    padding: 50px;
+    text-align: center;
+    background-color: #00010e;
+}
 
-    .work-selection {
-        justify-content: space-around;
-        align-content: center;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr); 
-        gap: 60px; 
-        max-width: 1200px; 
-    }
+.work-selection {
+justify-content: space-around;
+align-content: center;
+display: grid;
+grid-template-columns: repeat(4, 1fr); 
+gap: 60px; 
+max-width: 1200px; 
+}
 
-    .work-item {
-        position: relative;
-        width: 280px;
-        margin: 10px;
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        text-align: center; 
-        max-width: 200px;
-    }
+.work-item {
+position: relative;
+width: 280px;
+margin: 10px;
+display: flex;
+flex-direction: column; 
+align-items: center; 
+text-align: center; 
+max-width: 200px;
+}
 
-    .text-content {
-        width: 240px;
-        margin: 0 0 0 0; 
-        display: flex;
-        flex-direction: column; 
-        align-items: left; 
-        text-align: left; 
-        max-width: 240px; 
-    }
+.text-content {
+    width: 240px;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 240px;
+  }
+  
+  .text-content h3 {
+    margin: 10px 0 4px 0;
+    font-size: 16px;
+    font-weight: 600;
+    width: auto;
+  }
+  
+  .text-content p {
+    margin: 0; 
+    padding-bottom: 8px;
+    font-size: 12px;
+    font-weight: 300;
+    width: auto;
+  }
+  
 
-    .text-content h3 {
-        margin-top: 5px;
-        font-size: 16px;
-        font-weight: 600;
-        width: auto;
-    }
-
-    .text-content p {
-        margin-bottom: 10px; 
-        font-size: 12px;
-        width: auto;
-    }
-
-
-    .work-item img {
-        width: 240px;
-        height: auto; /* Use auto for better responsiveness */
-        border-radius: 8px;
-        margin-top: 20px;
-        transition: transform 0.3s ease; /* Added transition for smooth scaling */
-    }
+.work-item img {
+width: 240px;
+height: auto; /* Use auto for better responsiveness */
+border-radius: 8px;
+margin-top: 20px;
+transition: transform 0.3s ease; /* Added transition for smooth scaling */
+}
 
 /* Arrow button (hidden initially) */
-    .arrow-icon {
-    position: absolute;
-    top: 14px;
-    right: -10px;
-    transform: translate(-10%, -10%);
-    width: 24px; 
-    height: 24px;
-    max-width: 24px;  
-    max-height: 24px; 
-    opacity: 0; 
-    transition: opacity 0.3s ease; 
-    z-index: 2; 
+.arrow-icon {
+position: absolute;
+top: 14px;
+right: -10px;
+transform: translate(-10%, -10%);
+width: 24px; 
+height: 24px;
+max-width: 24px;  
+max-height: 24px; 
+opacity: 0; 
+transition: opacity 0.3s ease; 
+z-index: 2; 
 }
 
 /* Show arrow on hover */
 .work-item:hover .arrow-icon {
-    opacity: 1; 
-    transform: translate(-10%, -10%) scale(1.2);
+opacity: 1; 
+transform: translate(-10%, -10%) scale(1.2);
 }
 
 /* Optionally, style the hover effect for the image */
 .work-item:hover img {
-    filter: brightness(70%); 
-    transition: filter 0.3s ease;
-    cursor: pointer;
+filter: brightness(70%); 
+transition: filter 0.3s ease;
+cursor: pointer;
 
 }
-
         /* Contact Section */
         .contact {
             text-align: center;

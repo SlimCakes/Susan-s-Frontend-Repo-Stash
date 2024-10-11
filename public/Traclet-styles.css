@@ -1,0 +1,208 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #00010e;
+    color: white;
+}
+
+ 
+header, footer, .about, .work {
+    max-width: 1200px; /* Limit content width */
+    margin: 0 auto; /* Center the content */
+    padding: 10px 20px; /* Add padding for smaller screens */
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #00010e;
+    }
+
+    .logo {
+        font-family: 'Manrope' sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: #00010e;
+        background-color: #f1f1f1;
+        padding: 10px 20px;
+        border: 2px solid white;
+        border-radius: 16px;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-links a {
+        color: #00010e;
+        background-color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 16px;
+        font-weight: 500;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+    background: linear-gradient(45deg, #011228, #ff0047); /* Diagonal gradient effect */
+    color: #F2F2F2;
+    }
+
+    /* Hamburger Menu */
+    .hamburger {
+        display: none;
+        cursor: pointer;
+    }
+    .hamburger div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+
+    #ProjectFrame {
+        padding: 40px;
+        text-align: center;
+    }
+
+    .Project-frame {
+        display: flex;
+        justify-content: space-around;
+        margin: 40px 0;
+        width: auto;
+        max-width: none;
+    }
+
+    .Project-images img {
+        width: 280px;
+        height: auto;
+        border-radius: 8px;
+        flex-shrink: 0;
+    }
+
+    #Project-heading {
+        padding: 40px;
+        text-align: center;
+    }
+
+    .Project-body {
+        padding: 40px;
+        text-align: center;
+    }
+
+    .Project-item {
+        display: flex;
+        justify-content: space-around;
+        margin: 40px 0;
+        width: auto;
+        max-width: none;
+    }
+
+    .Project-images img {
+        width: 280px;
+        height: auto;
+        border-radius: 8px;
+        flex-shrink: 0;
+    }
+
+
+    .Project-Description {
+        display: flex;
+        justify-content: space-between; /* Align items on both sides */
+        padding: 50px;
+        gap: 100px;
+        background-color: #00010e;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .Description-left {
+        flex: 1; 
+        text-align: left; /* Center align text horizontally */
+        display: flex; /* Use flexbox for vertical centering */
+        flex-direction: column; /* Align items in a column */
+        align-items: center; /* Center items vertically */
+        margin-right: 20px; /* Space between left and right */
+    }
+    
+    .Description-left h2 {
+        font-weight: 600;
+        width: 230px;
+        max-width: 300px;
+    }
+    
+    .Description-right {
+        flex: 1; 
+        text-align: left; 
+        color: #f1f1f1;
+        display: flex; 
+        justify-content: flex-start; 
+        align-items: flex-start; 
+        padding: 0 0 0 160px ;
+    }
+
+.accordion {
+    background-color: #f1f1f1;
+    margin: 10px 0;
+    width: 100%; 
+    max-width: 300px;
+    height: auto;
+    max-height: 100px;
+    padding: 8px; /* Reduced padding */
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.accordion-arrow{
+    padding-right: 4px;
+    margin-left: auto;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 8px 0; /* Reduced padding */
+    cursor: pointer;
+}
+
+.accordion-title {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 10px; /* Reduced margin */
+}
+
+.section-number {
+    color: #888;
+    font-size: 10px;
+    margin-right: 8px; /* Adjusted margin */
+}
+
+.accordion-title h3 {
+    margin: 0;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #00010e;
+}
+
+.accordion-arrow img {
+    width: 14px; /* Reduced arrow size */
+    height: 14px;
+}
+
+.accordion-content {
+    display: none;
+    border-top: 1px solid #333;
+}
+
+.accordion-content p {
+    color: #ccc;
+}
