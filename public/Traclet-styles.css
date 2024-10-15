@@ -85,35 +85,67 @@ header, footer, .about, .work {
     }
 
     #Project-heading {
-        padding: 40px;
-        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+        padding: 0 40px 0 40px;
+        text-align: left;
+        max-width: 1200px;
+        gap: 0;
+        margin: 0;
     }
 
     .Project-body {
-        padding: 40px;
-        text-align: center;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 1200px; 
     }
 
     .Project-item {
         display: flex;
         justify-content: space-around;
-        margin: 40px 0;
-        width: auto;
-        max-width: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 800px;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .Project-item h4 {
+        font-size: 12px;
+        font-weight: 300;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    .Project-item p {
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0;
+        line-height: 1.6;
+    }
+
+    .Project-images {
+        width: 350px;
+        overflow: hidden;
+        border-radius: 0;
     }
 
     .Project-images img {
-        width: 280px;
-        height: auto;
+        width: 350px;
+        height: 300px; 
+        object-fit: cover; 
         border-radius: 8px;
         flex-shrink: 0;
+        margin: 0;
     }
 
 
     .Project-Description {
         display: flex;
         justify-content: space-between; /* Align items on both sides */
-        padding: 50px;
+        padding: 0 40px 0 40px;
         gap: 100px;
         background-color: #00010e;
         max-width: 1200px;
@@ -135,16 +167,23 @@ header, footer, .about, .work {
         max-width: 300px;
     }
     
-    .Description-right {
+    .Description-Right {
         flex: 1; 
-        text-align: left; 
         color: #f1f1f1;
-        display: flex; 
-        justify-content: flex-start; 
-        align-items: flex-start; 
-        padding: 0 0 0 160px ;
+        padding: 0 0 0 0 ;
     }
 
+    .Description-Right h2 {
+        font-weight: 600;
+        width: 230px;
+        max-width: 300px;
+    }
+
+    .Description-Right p {
+        font-weight: 250;
+        width: 800px;
+        max-width: 1000px;
+    }
 .accordion {
     background-color: #f1f1f1;
     margin: 10px 0;
@@ -206,3 +245,74 @@ header, footer, .about, .work {
 .accordion-content p {
     color: #ccc;
 }
+
+
+.custom-video {
+        width: 100%; /* Full width of its container */
+        max-width: 800px; /* Set a max width to prevent the video from being too large */
+        border: 5px solid #333; /* Add a border around the video */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+        object-fit: cover; /* Ensures the video covers its container without stretching */
+        z-index: -1; 
+        pointer-events: none;
+      }
+
+      html, body,.banner {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+      .banner {
+        position: relative; 
+        width: 1200px;
+        height: auto; 
+        padding: 50px 0 50px 0;
+        text-align: center;
+    }
+    
+    .banner img {
+        max-width: 1200px;
+        height: auto; 
+        display: block;
+    }
+
+      .body1 {
+        display: flex;
+        justify-content: space-between; /* Align items on both sides */
+        padding: 0 40px 0 40px;
+        gap: 100px;
+        background-color: #00010e;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .body-left {
+        flex: 1; 
+        text-align: left; /* Center align text horizontally */
+        display: flex; /* Use flexbox for vertical centering */
+        flex-direction: column; /* Align items in a column */
+        align-items: center; /* Center items vertically */
+        margin-right: 20px; /* Space between left and right */
+    }
+    
+    .body-left h2 {
+        font-weight: 600;
+        width: 230px;
+        max-width: 300px;
+    }
+    
+    .body-right {
+        flex: 1; 
+        color: #f1f1f1;
+        padding: 0 0 0 0 ;
+    }
+
+    .body-right p {
+        font-weight: 250;
+        width: 800px;
+        max-width: 1000px;
+    }
+
+
