@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Bauhaus93';
+    src: url('./Fonts/Bauhaus93.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #00010e;
@@ -20,7 +27,7 @@ header, footer, .about, .work {
     }
 
     .logo {
-        font-family: 'Manrope' sans-serif;
+        font-family: 'Bauhaus93' sans-serif;
         font-size: 16px;
         font-weight: 500;
         color: #00010e;
@@ -344,7 +351,6 @@ header, footer, .about, .work {
         line-height: 1.6;
         text-align: justify;
     }
-    
     .image-container {
         width: 100%; 
         max-width: 1200px; 
@@ -359,6 +365,169 @@ header, footer, .about, .work {
     .image-container img {
         width: 100%; 
         height: 400px; 
+        object-fit: cover; 
+        border-radius: 10px;
+        pointer-events: none;
+    }
+
+
+    .landing-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 40px 20px 60px 20px;
+        gap: 20px;
+    }
+    
+    .body-vvright {
+        flex: 1;
+        padding: 10px 20px 10px 20px;
+      
+    }
+    
+    .body-vvleft {
+        flex: 1;
+        padding: 10px 20px 10px 20px;
+    }
+    
+    .body-vvright h2 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #f1f1f1;
+    }
+    
+    .body-vvright p {
+        font-size: 16px;
+        color: #f1f1f1;
+        font-weight: 250;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    .landing-vvright h2 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #f1f1f1;
+    }
+    
+    .landing-vvright p {
+        max-width: 600px;
+        font-size: 16px;
+        color: #f1f1f1;
+        font-weight: 250;
+        line-height: 1.6;
+        text-align: justify;
+    }
+    .landing-vvleft h2 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #f1f1f1;
+    }
+    
+    .landing-vvleft p {
+        max-width: 500px;
+        font-size: 16px;
+        color: #f1f1f1;
+        font-weight: 250;
+        line-height: 1.6;
+        text-align: justify;
+    }
+    
+    .landing-image-container {
+        width: 100%; 
+        max-width: 1200px; 
+        margin: 0 auto; 
+        padding: 20px 0; 
+        position: relative; 
+        display: flex;
+        justify-content: left;
+        align-items: left;
+    }
+    
+    .landing-image-container img {
+        width: 100%; 
+        height: auto; 
+        object-fit: cover; 
+        border-radius: 10px;
+        pointer-events: none;
+    }
+
+    .admin-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 40px 20px 60px 20px;
+        gap: 20px;
+    }
+    
+    .body-vvright {
+        flex: 1;
+        padding: 10px 20px 10px 20px;
+      
+    }
+    
+    .body-vvleft {
+        flex: 1;
+        padding: 10px 20px 10px 20px;
+    }
+    
+    .body-vvright h2 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #f1f1f1;
+    }
+    
+    .body-vvright p {
+        font-size: 16px;
+        color: #f1f1f1;
+        font-weight: 250;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    .admin-vvright h2 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #f1f1f1;
+    }
+    
+    .admin-vvright p {
+        max-width: 600px;
+        font-size: 16px;
+        color: #f1f1f1;
+        font-weight: 250;
+        line-height: 1.6;
+        text-align: justify;
+    }
+    .admin-vvleft h2 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #f1f1f1;
+    }
+    
+    .admin-vvleft p {
+        max-width: 500px;
+        font-size: 16px;
+        color: #f1f1f1;
+        font-weight: 250;
+        line-height: 1.6;
+        text-align: justify;
+    }
+    
+    .admin-image-container {
+        width: 100%; 
+        max-width: 1200px; 
+        margin: 0 auto; 
+        padding: 20px 0; 
+        position: relative; 
+        display: flex;
+        justify-content: left;
+        align-items: left;
+    }
+    
+    .admin-image-container img {
+        width: 100%; 
+        height: auto; 
         object-fit: cover; 
         border-radius: 10px;
         pointer-events: none;
@@ -400,6 +569,47 @@ header, footer, .about, .work {
         box-sizing: border-box;
     }
     
-
-   
+    footer {
+        position: relative;
+        background-color: #f1f1f1;
+        color: #011228;
+        text-align: center;
+        padding: 20px;
+        width: 100vw;
+        max-width: 1440px;
+        height: auto;
+        margin: 0 auto;
+        box-sizing: border-box; 
+        overflow-x: hidden;
+    }
     
+    .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .logo img {
+        height: 80px;
+    }
+    
+    .footer-links a {
+        color: #011228;
+        margin-left: 20px;
+        text-decoration: none;
+    }
+
+    .footer-links a img {
+        width: 32px;
+        height: 32px;
+    }
+    
+    
+    .copyright {
+        margin-top: 20px;
+        font-size: 14px;
+        color: gray;
+    }
