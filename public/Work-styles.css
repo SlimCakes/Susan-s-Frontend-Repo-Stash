@@ -132,7 +132,7 @@
     max-width: 1200px;
     margin: 0;
     line-height: 1.2;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 400;
 }
 
@@ -143,7 +143,7 @@
             text-align: center;
             background-color: #00010e;
             max-width: 1200px; 
-            padding: 20px 0 60px 50px; 
+            padding: 60px 40px 60px 60px; 
         }
 
     .work-selection {
