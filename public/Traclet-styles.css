@@ -1,18 +1,15 @@
-@font-face {
-    font-family: 'Bauhaus93';
-    src: url('./Fonts/Bauhaus93.ttf') format('truetype'); 
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #00010e;
     color: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
  
-header, footer, .about, .work {
+header {
     max-width: 1200px; /* Limit content width */
     margin: 0 auto; /* Center the content */
     padding: 10px 20px; /* Add padding for smaller screens */
@@ -22,21 +19,20 @@ header, footer, .about, .work {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 20px;
+        padding: 10px 40px;
         background-color: #00010e;
     }
 
     .logo {
-        font-family: 'Bauhaus93' sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        color: #00010e;
-        background-color: #f1f1f1;
-        padding: 10px 20px;
-        border: 2px solid white;
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo img {
+        max-height: 40px; /* Adjust this value to fit your design */
+        width: auto;
         border-radius: 16px;
     }
-
     .nav-links {
         display: flex;
         gap: 20px;
@@ -94,7 +90,7 @@ header, footer, .about, .work {
     #Project-heading {
         font-size: 24px;
         font-weight: 600;
-        padding: 0 40px 0 40px;
+        padding: 0 60px 060px;
         text-align: left;
         max-width: 1200px;
         gap: 0;
@@ -152,7 +148,7 @@ header, footer, .about, .work {
     .Project-Description {
         display: flex;
         justify-content: space-between; /* Align items on both sides */
-        padding: 0 40px 0 40px;
+        padding: 10px 60px 80px 60px;
         gap: 100px;
         background-color: #00010e;
         max-width: 1200px;
@@ -177,7 +173,7 @@ header, footer, .about, .work {
     .Description-Right {
         flex: 1; 
         color: #f1f1f1;
-        padding: 0 0 0 0 ;
+        padding: 0 20px 0 0 ;
     }
 
     .Description-Right h2 {
@@ -188,7 +184,7 @@ header, footer, .about, .work {
 
     .Description-Right p {
         font-weight: 250;
-        width: 800px;
+        width: 700px;
         max-width: 1000px;
     }
 .accordion {
@@ -253,21 +249,20 @@ header, footer, .about, .work {
     color: #ccc;
 }
 
-    .banner {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow-x: hidden;
-    }
     
     .banner {
-        position: relative; 
-        width: 100%; /* Responsive width */
-        max-width: 1440px; /* Restricts to 1200px max */
-        height: auto; 
-        padding: 50px 0;
-        text-align: center;
-        margin: 0 auto; /* Centers the banner */
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    
+    .banner img {
+        width: 100%;
+        height: auto;
+        display: block;
     }
     
     img {
@@ -275,11 +270,6 @@ header, footer, .about, .work {
         padding: 0;
     }
     
-    .banner img {
-        max-width: 100%; /* Responsive image */
-        height: auto; 
-        display: block;
-    }
     
 
       .body1 {
@@ -323,8 +313,9 @@ header, footer, .about, .work {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        padding: 40px 20px 60px 20px;
+        padding: 40px 40px 40px 40px;
         gap: 20px;
+        max-width: 1200px;
     }
     
     .body-vright {
@@ -375,8 +366,9 @@ header, footer, .about, .work {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        padding: 40px 20px 60px 20px;
+        padding: 40px 40px 40px 40px;
         gap: 20px;
+        max-width: 1200px;
     }
     
     .body-vvright {
@@ -404,6 +396,16 @@ header, footer, .about, .work {
         text-align: justify;
     }
 
+    .landing-vvright {
+        flex: 1;
+        padding: 10px 20px 10px 20px;
+      
+    }
+    
+    .landing-vvleft {
+        flex: 1;
+        padding: 10px 20px 10px 20px;
+    }
     .landing-vvright h2 {
         font-size: 24px;
         font-weight: 600;
@@ -456,8 +458,9 @@ header, footer, .about, .work {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        padding: 40px 20px 60px 20px;
+        padding: 40px 40px 40px 40px;
         gap: 20px;
+        max-width: 1200px;
     }
     
     .body-vvright {
@@ -491,6 +494,16 @@ header, footer, .about, .work {
         color: #f1f1f1;
     }
     
+    .admin-vvright {
+        flex: 1;
+        padding: 10px 20px 10px 20px;
+      
+    }
+    
+    .admin-vvleft {
+        flex: 1;
+        padding: 10px 20px 10px 20px;
+    }
     .admin-vvright p {
         max-width: 600px;
         font-size: 16px;
@@ -569,47 +582,3 @@ header, footer, .about, .work {
         box-sizing: border-box;
     }
     
-    footer {
-        position: relative;
-        background-color: #f1f1f1;
-        color: #011228;
-        text-align: center;
-        padding: 20px;
-        width: 100vw;
-        max-width: 1440px;
-        height: auto;
-        margin: 0 auto;
-        box-sizing: border-box; 
-        overflow-x: hidden;
-    }
-    
-    .footer-content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    
-    .logo img {
-        height: 80px;
-    }
-    
-    .footer-links a {
-        color: #011228;
-        margin-left: 20px;
-        text-decoration: none;
-    }
-
-    .footer-links a img {
-        width: 32px;
-        height: 32px;
-    }
-    
-    
-    .copyright {
-        margin-top: 20px;
-        font-size: 14px;
-        color: gray;
-    }

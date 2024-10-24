@@ -1,0 +1,140 @@
+  /* Declare the font with @font-face */
+  @font-face {
+    font-family: 'Poppins';
+    src: url('Fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400; /* Normal */
+    font-style: normal;
+    }
+
+    @font-face {
+    font-family: 'Poppins';
+    src: url('Fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+    }
+
+    @font-face {
+    font-family: 'Poppins';
+    src: url('Fonts/Poppins-Italic.ttf') format('truetype');
+    font-weight: 400; /* Normal */
+    font-style: italic;
+    }
+
+    /* Declare the font with @font-face */
+    /* Regular */
+@font-face {
+    font-family: 'Manrope';
+    src: url('./Fonts/Manrope-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Manrope';
+    src: url('./Fonts/Manrope-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* SemiBold */
+@font-face {
+    font-family: 'Manrope';
+    src: url('./Fonts/Manrope-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'Manrope';
+    src: url('./Fonts/Manrope-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Light */
+@font-face {
+    font-family: 'Manrope';
+    src: url('./Fonts/Manrope-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* ExtraLight */
+@font-face {
+    font-family: 'Manrope';
+    src: url('./Fonts/Manrope-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* Thin */
+@font-face {
+    font-family: 'Manrope';
+    src: url('./Fonts/Manrope-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Italic */
+@font-face {
+    font-family: 'Manrope';
+    src: url('./Fonts/Manrope-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+font-family: 'Bauhaus93';
+src: url('./Fonts/Bauhaus93.ttf') format('truetype'); 
+font-weight: normal;
+font-style: normal;
+}
+
+
+footer {
+    background-color: #f9f9f9;
+    color: #011228;
+    text-align: center;
+    width: 100%;
+    min-height: 80px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    height: 100%;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.footer-links a {
+    color: #011228;
+    margin-left: 20px;
+}
+
+.footer-links a img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.copyright {
+    font-size: 14px;
+    color: gray;
+    margin: 0;
+}
+
+.copyright p {
+    margin: 0;
+}
