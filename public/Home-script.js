@@ -1,10 +1,15 @@
+// Event listener for all work-items
 document.querySelectorAll('.work-item').forEach(item => {
-            item.addEventListener('click', (event) => {
-                if (!event.target.matches('.learn-more-btn') && !event.target.closest('.learn-more-btn')) {
-                    alert('Work item clicked! You can replace this with your desired action.');
-                }
-            });
-        });
+    item.addEventListener('click', (event) => {
+        if (!event.target.matches('.learn-more-btn') && !event.target.closest('.learn-more-btn')) {
+            // Navigate to target (if set)
+            const target = item.getAttribute('data-target');
+            if (target) {
+                window.location.href = target;
+            }
+        }
+    });
+});
 
         document.querySelectorAll('.learn-more-btn').forEach(btn => {
             btn.addEventListener('click', (event) => {
@@ -53,3 +58,15 @@ function changeGreeting() {
 // Change greeting every 2 seconds (2000 milliseconds)
 setInterval(changeGreeting, 2000);
 
+document.addEventListener('DOMContentLoaded', function() {
+    const workItems = document.querySelectorAll('.work-item');
+    
+    workItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const target = this.getAttribute('data-target');
+            if (target) {
+                window.location.href = target;
+            }
+        });
+    });
+});
