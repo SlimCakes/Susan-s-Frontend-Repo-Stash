@@ -10,6 +10,10 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'Home.html'));
 });
 
+app.get('/home', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'Home.html'));
+});
+
 // Route for the second HTML file (about.html)
 app.get('/about', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'About.html'));
