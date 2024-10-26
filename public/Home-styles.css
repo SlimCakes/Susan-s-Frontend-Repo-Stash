@@ -386,24 +386,241 @@ cursor: pointer;
         }
 
 
-/* Style adjustments for small screens */
-@media (max-width: 1200px) {
-    .experience-item {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
+/* Mobile-first base styles */
+@media screen and (max-width: 768px) {
+    /* Container width */
+    .container, 
+    .intro,
+    #portfolio,
+    .about,
+    .work,
+    footer {
+      width: 300px;
+      margin: 0 auto;
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+  
+    /* Navigation adjustments */
+    nav {
+      width: 300px;
+      margin: 0 auto;
+      padding: 10px;
+    }
+  
+    .nav-links {
+      display: none; /* Hidden by default, shown via hamburger menu */
+    }
+  
+    .logo img {
+      max-width: 120px;
+      height: auto;
+    }
+  
+    .hamburger-menu {
+      display: block;
+    }
+  
+    /* Intro section */
+    .intro h1 {
+      font-size: 24px;
+    }
+  
+    .intro h2 {
+      font-size: 20px;
+    }
+  
+    .intro h4 {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  
+    /* Portfolio section */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+  
+    .projects img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  
+    /* About section */
+    .about {
+      flex-direction: column;
+    }
+  
+    .about-left,
+    .about-right {
+      width: 100%;
+    }
+  
+    .about-right img {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+  
+    /* Work section */
+    .work-selection {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+  
+    .work-item {
+      width: 100%;
+    }
+  
+    .work-item img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .text-content h3 {
+      font-size: 14px;
+    }
+  
+    .text-content p {
+      font-size: 12px;
+    }
+  
+    /* Footer */
+    .footer-content {
+      width: 300px;
+      margin: 0 auto;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .footer-links {
+      display: flex;
+      gap: 15px;
+    }
+  
+    .footer-links img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  
+  /* Larger screen styles */
+  @media screen and (min-width: 769px) {
+    .hamburger-menu {
+      display: none;
+    }
+  
+    .nav-links {
+      display: flex;
+    }
+  }
+
+/* Tablet Styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 16px; /* Adjust font size for tablets */
     }
 
-    .experience-duration,
-    .experience-details {
-        width: auto;
-        text-align: center; 
+    header {
+        padding: 15px;
     }
 
-    .experience-duration {
-        margin-bottom: 10px;
+    h1 {
+        font-size: 48px; /* Adjust heading for tablets */
     }
-    
+
+    h2 {
+        font-size: 36px; /* Adjusted for tablet */
+    }
+
+    h4 {
+        font-size: 24px; /* Adjusted for tablet */
+    }
+
+    .container.intro {
+        width: 90%; /* Slightly less padding */
+        padding: 0 20px;
+    }
+
+    .projects {
+        flex-direction: row; /* Horizontal layout for tablets */
+        flex-wrap: wrap; /* Allow wrapping of project items */
+    }
+
+    .project {
+        width: 45%; /* Two items per row */
+        max-width: 300px; /* Keep max width */
+    }
+
+    .about {
+        flex-direction: row; /* Maintain row direction */
+        text-align: left; /* Left-align text */
+    }
+
+    .work-selection {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on tablet */
+    }
+
+    .work-item {
+        width: 80%; /* Slightly less width */
+    }
 }
 
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px; 
+    }
 
+    header {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 72px; 
+    }
+
+    h2 {
+        font-size: 48px; 
+    }
+
+    h4 {
+        font-size: 28px; 
+    }
+
+    .hamburger-menu {
+        display: none; 
+    }
+
+    .container.intro {
+        width: 1200px; 
+        padding: 0 40px;
+    }
+
+    .projects {
+        flex-direction: row; /* Horizontal layout */
+        justify-content: space-between; /* Even spacing */
+    }
+
+    .project {
+        width: 30%; /* Three items per row */
+        max-width: 300px; /* Keep consistent max width */
+    }
+
+    .about {
+        flex-direction: row; /* Keep row direction */
+        justify-content: space-between; /* Space out sections */
+    }
+
+    .work-selection {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+    }
+
+    .work-item {
+        width: 100%; /* Full width for work items */
+    }
+}
