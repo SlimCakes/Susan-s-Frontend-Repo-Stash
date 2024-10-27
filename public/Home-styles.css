@@ -167,58 +167,7 @@
         }
 
         
-    .mobile-nav {
-        position: fixed;
-        top: 0;
-        right: -250px;
-        height: 100vh;
-        width: 250px;
-        background: #00010e;
-        z-index: 999;
-        transition: right 0.3s ease;
-        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
-    }
     
-    .mobile-nav.active {
-        right: 0;
-    }
-    
-    .nav-links {
-        padding: 60px 20px 20px;
-        list-style: none;
-        margin: 0;
-    }
-    
-    .nav-links li {
-        margin-bottom: 15px;
-    }
-    
-    .nav-links a {
-        color: white;
-        text-decoration: none;
-        font-size: 16px;
-        display: block;
-        padding: 10px 20px;
-        border-radius: 16px;
-        background-color: transparent;
-        transition: background-color 0.3s ease;
-    }
-    
-    .nav-links a:hover {
-        background: linear-gradient(45deg, #011228, #ff0047);
-    }
-
-    .hamburger-menu.active .hamburger-line:nth-child(1) {
-        transform: translateY(6px) rotate(45deg);
-    }
-    
-    .hamburger-menu.active .hamburger-line:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .hamburger-menu.active .hamburger-line:nth-child(3) {
-        transform: translateY(-6px) rotate(-45deg);
-    }
 
         .greeting-english {
             font-family: 'Arial', sans-serif; 
@@ -614,6 +563,59 @@ cursor: pointer;
         font-size: 20px;
         font-weight: 400;
         border-radius: 8px;
+    }
+    .mobile-nav {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        height: 100vh;
+        width: 250px;
+        background: #00010e;
+        color: #F1f1f1;
+        z-index: 999;
+        transition: right 0.3s ease;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    }
+    
+    .mobile-nav.active {
+        right: 0;
+    }
+    
+    .nav-links {
+        padding: 60px 20px 20px;
+        list-style: none;
+        margin: 0;
+    }
+    
+    .nav-links li {
+        margin-bottom: 15px;
+    }
+    
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        display: block;
+        padding: 10px 20px;
+        border-radius: 16px;
+        background-color: transparent;
+        transition: background-color 0.3s ease;
+    }
+    
+    .nav-links a:hover {
+        background: linear-gradient(45deg, #011228, #ff0047);
+    }
+
+    .hamburger-menu.active .hamburger-line:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+    
+    .hamburger-menu.active .hamburger-line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger-menu.active .hamburger-line:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
     }
 
     /* Projects section */

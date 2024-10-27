@@ -72,17 +72,26 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // JavaScript to toggle the menu visibility
-document.addEventListener("DOMContentLoaded", function() {
-    const hamburgerMenu = document.getElementById("hamburgerMenu");
-    const navLinks = document.getElementById("navLinks");
-
-    if (hamburgerMenu && navLinks) {  // Check if both elements exist
-        hamburgerMenu.addEventListener("click", function() {
-            navLinks.classList.toggle("active");
-        });
-    } else {
-        console.error("Element not found: Check if 'hamburgerMenu' and 'navLinks' IDs are correct.");
+document.addEventListener('DOMContentLoaded', function() {
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    const overlay = document.getElementById('overlay');
+    
+    function toggleMenu() {
+        menuBtn.classList.toggle('active');
+        mobileNav.classList.toggle('active');
+        overlay.classList.toggle('active');
+        document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
     }
+    
+    menuBtn.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', toggleMenu);
+    
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && mobileNav.classList.contains('active')) {
+            toggleMenu();
+        }
+    });
 });
 
 
