@@ -112,8 +112,9 @@ footer {
     height: 100%;
 }
 
-.logo img {
-    height: 60px;
+.footer-logo img {
+    height: 40px;
+    padding-left: 20px;
 }
 
 .footer-links a {
