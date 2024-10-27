@@ -70,3 +70,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// JavaScript to toggle the menu visibility
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburgerMenu = document.getElementById("hamburgerMenu");
+    const navLinks = document.getElementById("navLinks");
+
+    if (hamburgerMenu && navLinks) {  // Check if both elements exist
+        hamburgerMenu.addEventListener("click", function() {
+            navLinks.classList.toggle("active");
+        });
+    } else {
+        console.error("Element not found: Check if 'hamburgerMenu' and 'navLinks' IDs are correct.");
+    }
+});
+
+
