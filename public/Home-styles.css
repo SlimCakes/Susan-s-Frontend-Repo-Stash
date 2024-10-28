@@ -566,6 +566,7 @@ cursor: pointer;
     }
     .mobile-nav {
         position: fixed;
+        text-align: left;
         top: 0;
         right: -250px;
         height: 100vh;
@@ -580,6 +581,37 @@ cursor: pointer;
     .mobile-nav.active {
         right: 0;
     }
+
+    .mobile-nav .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding:80px 10px;
+        align-items: flex-start;
+        max-width: 200px;
+        width: 170px;
+    }
+    
+    .mobile-nav .nav-links li {
+        list-style: none;
+        width: 80%; 
+        margin: 0 auto;
+    }
+    
+    .mobile-nav .nav-links a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 16px;
+        font-size: 16px;
+        transition: background 0.3s ease;
+    }
+    
+    .mobile-nav .nav-links a:hover {
+        background: linear-gradient(45deg, #011228, #ff0047);
+    }
+    
     
     .nav-links {
         padding: 60px 20px 20px;
@@ -606,16 +638,41 @@ cursor: pointer;
         background: linear-gradient(45deg, #011228, #ff0047);
     }
 
+    .nav-links li:nth-child(4) a {
+        background-color: white;
+        color: #011228;
+        padding: 10px 20px;
+        border-radius: 16px;
+        margin-top: 10px;
+        transition: background-color 0.3s ease;
+      }
+      
+
     .hamburger-menu.active .hamburger-line:nth-child(1) {
         transform: translateY(6px) rotate(45deg);
     }
-    
+
     .hamburger-menu.active .hamburger-line:nth-child(2) {
         opacity: 0;
     }
-    
+
     .hamburger-menu.active .hamburger-line:nth-child(3) {
         transform: translateY(-6px) rotate(-45deg);
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+    }
+    
+    .overlay.active {
+        display: block;
     }
 
     /* Projects section */
