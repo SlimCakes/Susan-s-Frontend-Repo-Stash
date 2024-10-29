@@ -19,9 +19,16 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 40px;
+        padding: 20px 20px;
         background-color: #00010e;
+        list-style: none;
     }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
 
     .logo {
         display: flex;
@@ -33,6 +40,7 @@ header {
         width: auto;
         border-radius: 16px;
     }
+    
     .nav-links {
         display: flex;
         gap: 20px;
@@ -43,28 +51,34 @@ header {
         background-color: white;
         text-decoration: none;
         padding: 10px 20px;
-        font-size: 16px;
+        font-size: 14px;
         border-radius: 16px;
-        font-weight: 500;
+        font-weight: 400;
         transition: background-color 0.3s ease;
     }
 
-    .nav-links a:hover {
-    background: linear-gradient(45deg, #011228, #ff0047); /* Diagonal gradient effect */
-    color: #F2F2F2;
+    .hamburger-menu {
+        display: none;
+        position: relative;
+        z-index: 1000;
+        background: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 8px;
     }
 
-    /* Hamburger Menu */
-    .hamburger {
-        display: none;
-        cursor: pointer;
-    }
-    .hamburger div {
-        width: 25px;
-        height: 3px;
-        background-color: white;
-        margin: 5px;
+    .hamburger-line {
+        display: block;
+        width: 14px;
+        height: 2px;
+        margin: 4px 0;
+        background-color: #00010e;
         transition: all 0.3s ease;
+    }
+
+    .nav-links a:hover {
+    background: linear-gradient(45deg, #011228, #ff0047); 
+    color: #F2F2F2;
     }
 
     #ProjectFrame {
