@@ -447,7 +447,7 @@
         position: fixed;
         text-align: left;
         top: 0;
-        right: 0;
+        right: -250px;
         height: 100vh;
         width: 250px;
         background: #00010e;
@@ -458,7 +458,7 @@
     }
     
     .mobile-nav.active {
-        right: 180px;
+        right: 0;
         display: block;
         transform: translateX(0);
     }
