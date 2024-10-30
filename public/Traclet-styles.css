@@ -736,6 +736,7 @@ nav {
     #Project-Description,
     #overflow-banner,
     #mobile-application
+    .approach-section
     nav  {
         max-width: 375px !important;
         width: 350px !important;
@@ -845,7 +846,7 @@ nav {
             max-width: 375px;
             width: 100%;
             margin: 0 auto;
-            padding: 5px 0 20px 0;
+            padding: 5px 0 40px 0;
         }
 
         .Description-Right h2{
@@ -867,8 +868,338 @@ nav {
         }
 
         .body1{
-            
+            max-width: 375px !important;
+            width: 350px;
+            margin: 0 auto;
+            padding: 0 10px;
+            flex-direction: column;
+            gap: 10px;         
         }
+        .body-left{
+            max-width: 375px;
+            width: 330px;
+            margin: 0 auto;
+            padding: 20px 0 0 0;
+        }
+
+        .body-left h2{
+            max-width: 330px;
+            width: 100%;
+            font-size: 20px;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+        .body-right{
+            max-width: 375px;
+            width: 330px;
+            margin: 0 auto;
+            padding: 0 0 20px 0;
+        }
+
+        .body-right p {
+            max-width: 330px;
+            width: 100%;
+            font-size: 12px;
+            text-align: center;
+            padding: 4px 0;
+            margin: 0;
+        }
+
+        .approach-section{  
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            max-width: 375px !important;
+            width: 100% !important;
+            margin: 0 auto !important;
+        }
+        .body-vleft{
+            max-width: 330px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 ;
+        }
+
+        .body-vleft img{
+            width: 100%;
+            height: auto;
+        }
+        .body-vleft h2 {
+            max-width: 330px;
+            width: 100%;
+            font-size: 20px;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .body-vleft h3 {
+            max-width: 330px;
+            width: 100%;
+            font-size: 16px;
+            text-align: center;
+            padding: 20px 0 0 0;
+            margin: 0;
+        }
+
+        .body-vright{
+            max-width: 330px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .body-vright h2 {
+            max-width: 330px;
+            width: 100%;
+            font-size: 20px;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .body-vright h3 {
+            max-width: 330px;
+            width: 100%;
+            font-size: 16px;
+            text-align: center;
+            padding: 20px 0 0 0;
+            margin: 0;
+        }
+        
+        .body-vright p {
+            max-width: 330px;
+            width: 100%;
+            font-size: 12px;
+            text-align: center;
+            padding: 4px 0;
+            margin: 0;
+        }
+
+        .landing-section{  
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            max-width: 375px !important;
+            width: 100% !important;
+            margin: 0 auto !important;
+        }
+        .body-vvleft{
+            max-width: 330px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 ;
+        }
+
+        .body-vvleft img{
+            width: 100%;
+            height: auto;
+        }
+        .body-vvleft h2 {
+            max-width: 330px;
+            width: 100%;
+            font-size: 20px;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .body-vvleft h3 {
+            max-width: 330px;
+            width: 100%;
+            font-size: 16px;
+            text-align: center;
+            padding: 20px 0 0 0;
+            margin: 0;
+        }
+
+        .body-vvright{
+            max-width: 330px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .body-vvright h2 {
+            max-width: 330px;
+            width: 100%;
+            font-size: 20px;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .body-vvright h3 {
+            max-width: 330px;
+            width: 100%;
+            font-size: 16px;
+            text-align: center;
+            padding: 20px 0 0 0;
+            margin: 0;
+        }
+        
+        .body-vvright p {
+            max-width: 330px;
+            width: 100%;
+            font-size: 12px;
+            text-align: center;
+            padding: 4px 0;
+            margin: 0;
+        }
+
+
+        .landing-vvleft{
+            max-width: 330px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 ;
+        }
+
+        .landing-vvleft img{
+            width: 100%;
+            height: auto;
+        }
+
+        .landing-vvleft h2 {
+            max-width: 330px;
+            width: 100%;
+            font-size: 20px;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .landing-vvleft h3 {
+            max-width: 330px;
+            width: 100%;
+            font-size: 16px;
+            text-align: center;
+            padding: 20px 0 0 0;
+            margin: 0;
+        }
+        .landing-vvleft p {
+            max-width: 330px;
+            width: 100%;
+            font-size: 12px;
+            text-align: center;
+            padding: 4px 0;
+            margin: 0;
+        }
+
+
+        .landing-vvright{
+            max-width: 330px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .landing-vvright h2 {
+            max-width: 330px;
+            width: 100%;
+            font-size: 20px;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .landing-vvright h3 {
+            max-width: 330px;
+            width: 100%;
+            font-size: 16px;
+            text-align: center;
+            padding: 20px 0 0 0;
+            margin: 0;
+        }
+        
+        .landing-vvright p {
+            max-width: 330px;
+            width: 100%;
+            font-size: 12px;
+            text-align: center;
+            padding: 4px 0;
+            margin: 0;
+            flex-wrap: nowrap;
+        }
+
+        .admin-section{  
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            max-width: 375px !important;
+            width: 100% !important;
+            margin: 0 auto !important;
+        }
+        .admin-vvleft{
+            max-width: 330px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 ;
+        }
+
+        .admin-vvleft img{
+            width: 100%;
+            height: auto;
+        }
+        
+        .admin-vvleft h3 {
+            max-width: 330px;
+            width: 100%;
+            font-size: 16px;
+            text-align: center;
+            padding: 20px 0 0 0;
+            margin: 0;
+        }
+        .admin-vvleft p {
+            max-width: 330px;
+            width: 100%;
+            font-size: 12px;
+            text-align: center;
+            padding: 4px 0;
+            margin: 0;
+        }
+
+        .admin-vvright{
+            max-width: 330px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .admin-vvright img{
+            width: 100%;
+            height: auto;
+        }
+        .admin-vvright h3 {
+            max-width: 330px;
+            width: 100%;
+            font-size: 16px;
+            text-align: center;
+            padding: 20px 0 0 0;
+            margin: 0;
+        }
+        
+        .admin-vvright p {
+            max-width: 330px;
+            width: 100%;
+            font-size: 12px;
+            text-align: center;
+            padding: 4px 0;
+            margin: 0;
+        }
+
+        .overflow-banner{
+            max-width: 380px;
+            width: 100%;
+        }
+
+        .overflow-banner img{
+            width: 100%;
+            height: auto;
+        }
+
+
 
     /* Navigation */
     nav {
@@ -995,99 +1326,12 @@ nav {
         z-index: 998;
     }
     
-    .overlay.active {
-        display: block;
-    }
-
-    /* Projects section */
-    #portfolio{     width: 350px;
-        max-width: 375px;
-        box-sizing: border-box;
-
-    }
-
-    #portfolio h2 {
-        padding: 0 20px; 
-    }
-
-   .projects {
-    display: grid;
-    justify-content: space-around;
-        max-width: 375px;
-        width: 100%;
-        margin: 20px auto;
-        padding: 0 40px;
-    }
-
-
-    .project img {
-        height: 200px;
-    }
-
-    /* Work section */
-    .work{
-        max-width: 375px;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .work h2 {
-        font-size: 28px;
-        margin: 40px auto 8px auto;
-    }
-    
-    .work-selection {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    .work-item {
-        max-width: 375px;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .work-item img {
-        width: 100%;
-        max-width: 260px;
-    }
-
-    /* About section */
-    .about{
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-    .about-left h2 {
-        text-align: center;
-        font-size: 32px;
-        margin: 10px auto;
-    }
-    .about-left p {
-        width: 300px;
-        text-align: center;
-        font-size: 16px;
-        margin: 10px auto;
-    }
-
-    .contact-button {
-        width: 100%;
-        max-width: 200px;
-        display: block; 
-        margin: 10px auto;
-    }
-
-    .about-right {
-        width: 100%;
-    }
-    .about-right img {
-        width: 100%;
-        max-width: 260px;
-    }
-
       .footer-content {
         flex-direction: column;
         width: 300px;
+}
+.copyright{
+    padding: 0 0 15px 0;
 }
 }
 
