@@ -104,5 +104,23 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+document.getElementById('instagram').addEventListener('click', function() {
+    window.open('https://www.instagram.com/biig.sue', '_blank');
+});
 
+document.getElementById('linkedin').addEventListener('click', function() {
+    window.open('https://www.linkedin.com/in/susan-nkere', '_blank');
+});
+
+document.getElementById('facebook').addEventListener('click', function() {
+    window.open('https://www.facebook.com/chidi-nkere', '_blank');
+});
+
+document.getElementById('tiktok').addEventListener('click', function() {
+    window.open('https://www.tiktok.com/@big.sue_', '_blank');
+});
+
+document.getElementById('twitter').addEventListener('click', function() {
+    window.open('https://www.tiktok.com/@Biigsue', '_blank');
+});
 
