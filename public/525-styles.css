@@ -829,10 +829,11 @@ header {
         }
 
         .image{
-            max-width: 330px;
+            max-width: 350px;
             width: 100%;
             margin: 0 auto;
             padding: 0;
+            text-align: center;
         }
 
         .admin-image-container{
@@ -859,7 +860,7 @@ header {
         }
 
         .admin-section{
-            max-width: 380px;
+            max-width: 350px;
             width: 100%;
         }
 

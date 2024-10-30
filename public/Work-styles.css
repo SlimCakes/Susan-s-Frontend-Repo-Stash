@@ -487,7 +487,11 @@
     .overlay.active {
         display: block;
 
-}   
+}  
+
+.arrow-icon{
+    display: none;
+} 
     .footer-content {
         flex-direction: column;
         width: 350px;

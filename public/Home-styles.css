@@ -674,6 +674,10 @@ cursor: pointer;
         display: block;
     }
 
+    .arrow-icon{
+        display: none;
+    }
+
     /* Projects section */
     #portfolio{     width: 350px;
         max-width: 375px;
