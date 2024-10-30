@@ -757,7 +757,7 @@ nav {
     }
 
     #Project-heading h1{
-        font-size: 32px;
+        font-size: 28px;
         }
 
     .Project-body {
@@ -785,7 +785,7 @@ nav {
     max-width: 375px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 10px 10px 10px 10px;
 }
 
     .Project-images {
@@ -923,7 +923,8 @@ nav {
 
         .body-vleft img{
             width: 100%;
-            height: auto;
+            max-width: 300px;
+            margin: 20px auto;
         }
         .body-vleft h2 {
             max-width: 330px;
@@ -994,7 +995,8 @@ nav {
 
         .body-vvleft img{
             width: 100%;
-            height: auto;
+            max-width: 300px;
+            margin: 20px auto;
         }
         .body-vvleft h2 {
             max-width: 330px;
@@ -1058,7 +1060,8 @@ nav {
 
         .landing-vvleft img{
             width: 100%;
-            height: auto;
+            max-width: 300px;
+            margin: 20px auto;
         }
 
         .landing-vvleft h2 {
@@ -1140,7 +1143,8 @@ nav {
 
         .admin-vvleft img{
             width: 100%;
-            height: auto;
+            max-width: 300px;
+            margin: 20px auto;
         }
         
         .admin-vvleft h3 {
@@ -1169,7 +1173,8 @@ nav {
 
         .admin-vvright img{
             width: 100%;
-            height: auto;
+            max-width: 300px;
+            margin: 20px auto;
         }
         .admin-vvright h3 {
             max-width: 330px;
@@ -1326,6 +1331,10 @@ nav {
         z-index: 998;
     }
     
+    .overlay.active {
+        display: block;
+    }
+    
       .footer-content {
         flex-direction: column;
         width: 300px;
@@ -1355,4 +1364,4 @@ nav {
         border: none;
         cursor: pointer;
     }
-}   
+}
