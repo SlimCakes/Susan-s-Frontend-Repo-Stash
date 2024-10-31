@@ -291,7 +291,33 @@
 }
 
 /* Tablet styles */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    body{
+        overflow-x: hidden;
+    }
+
+
+    header, 
+    #about,
+    #work
+    .about,
+    .work,
+    .work-experience,
+    .contact,
+    nav{
+        max-width: 768px;
+        width: 744px;
+        margin: 0 auto;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    header{
+        width: 744px;
+        max-width: 768px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 20px 10px !important;
+    }
 
     /* Navigation */
 
@@ -303,7 +329,16 @@
     /* About section */
     .about {
         flex-direction: column;
-        padding: 20px;
+        max-width: 768px;
+        width: 744px;
+        margin: 0 auto;
+        padding: 10px 10px;
+        box-sizing: border-box;
+    }
+
+    .about-left {
+        padding: 0;
+        text-align: center;
     }
 
     .about-left,
@@ -311,33 +346,63 @@
         padding: 0;
     }
 
+    .about-left h2 {
+        font-size: 28px;
+        width: 100%;
+    }
     .about-left p {
+        font-size: 16px;
         width: 100%;
     }
 
     .about img {
-        width: 100%;
-        max-width: 360px;
+        width: 90%;
+        max-width: 700px;
         margin: 20px auto;
     }
 
+    .contact-button{
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 10px 10px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
     /* Work section */
-    .work {
-        padding: 30px 20px;
+    .work-experience {
+        max-width: 768px;
+        width: 744px;
+        margin: 0 auto;
+        padding: 10px 10px;
+        box-sizing: border-box;
     }
-
-    .work-selection {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .work-item {
-        width: 100%;
-        margin: 5px;
-    }
-
-    .text-content {
+    .work-container h2 {
+        font-size: 28px;
         width: 100%;
     }
+
+    .experience-details h3 {
+        font-size: 24px;
+        width: 100%;
+    }
+    .experience-details p {
+        font-size: 16px;
+        width: 100%;
+    }
+    .experience-duration{
+        padding-top: 30px;
+    }
+
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+.footer-content{
+    flex-direction: column;
+    width: 100%;
 }
 
 .hamburger-menu{
