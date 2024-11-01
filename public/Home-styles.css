@@ -90,6 +90,7 @@
         #intro {
             max-width: 1200px;
             width: 100%;
+            padding: 0 40px;
         }
 
         header, .container-intro, #intro, #portfolio, .about, .work {
@@ -104,7 +105,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 20px;
+            padding: 20px 10px;
             background-color: #00010e;
             list-style: none;
         }
@@ -461,7 +462,6 @@ cursor: pointer;
     #intro{
     width: 744px;
     max-width: 768px;
-    padding: 10px 10px;
     box-sizing: border-box;
     }
     .container.intro {

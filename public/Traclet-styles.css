@@ -618,7 +618,7 @@ nav {
         width: 100%;
         height: 60px; 
         background-image: url('https://res.cloudinary.com/dxgoaa5mn/image/upload/v1729001504/Frame_1000003143_pczriq.png');
-        background-repeat: no-repeat;
+        background-repeat: repeat;
         background-size: cover; 
         background-position: center center; 
         position: relative;
@@ -663,6 +663,15 @@ nav {
         width: 100%;
         margin: 0 auto;
         padding: 20px 20px;
+    }
+
+    #overflow-banner{
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    .overflow-banner img{
+        width: 100%;
     }
 }
 
